@@ -33,7 +33,7 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (winte
 * [Bash intro](https://tinyurl.com/bash-intro)
 * [Bash drill](exercises/bash_drill.md)
 * [Software installs](docs/tech_setup.md), part deux (config and Python install)
-* [Assignment 0](assignments/0.md) - Finish tech setup; Unix practice and play (**Due: Wed. Jan 20th**)
+* [Assignment 0](assignments/bash_intro.md) - Finish tech setup; Unix practice and play (**Due: Wed. Jan 20th**)
 
 ### Week 2
 
