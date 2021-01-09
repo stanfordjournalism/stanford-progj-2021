@@ -14,7 +14,6 @@ ls
 # Create the Desktop, just in case
 mkdir ~/Desktop
 
-
 # Navigate to Desktop
 cd ~/Desktop
 
