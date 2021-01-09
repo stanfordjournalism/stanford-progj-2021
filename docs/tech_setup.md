@@ -35,7 +35,7 @@ the course. To use it:
   * Type `python setup/configure_system.py` in the shell and hit `return`/`enter`
   * Answer the questions when prompted
 
-> You're done! You can skip all remaining steps below.
+> Congrats! You're almost done. Skip to the [DataKit install](#datakit).
 
 ### VSCode and Windows Subsystem for Linux
 
@@ -152,7 +152,15 @@ curl -O https://raw.githubusercontent.com/stanfordjournalism/stanford-dj-vm/mast
 python configure_system.py
 ```
 
+The configuration script will prompt you to peform a few additional steps:
+
+1. [Upload your ssh public key to GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+1. [Create a GitHub API token](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line)
+1. Open `~/.datakit/plugins/datakit-github/config.json` and replace `GITHUB_API_TOKEN` with the actual token from GitHub.
+
 ## DataKit
+
+> Before this step, make sure you've completed *all* [configuration](#configure) described above.
 
 [DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
 
