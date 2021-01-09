@@ -1,5 +1,13 @@
 # Automating workflow with DataKit
 
+- [Overview](#overview)
+- [Install](#install)
+- [Preview](#preview)
+- [First project](#first-project)
+- [Daily use](#day-to-day-with-datakit)
+
+## Overview
+
 In this course we'll dip into the culture of [newsroom automation](automating_workflows.md) by using [DataKit][], an open-source command-line tool created by The Associated Press. DataKit was [designed in a team environment][] to bring sanity to data projects. Among other things, it helps standardize project structures, easily share code and data with teammates, and even publish data as part of story packages.
 
 [DataKit]: https://datakit.ap.org/
