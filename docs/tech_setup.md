@@ -2,38 +2,45 @@
 
 This course requires a number of free services and tools available on Unix/Mac systems. If you're on Windows, see below for options.
 
-> See the [Technical FAQ page](tech_faq.md) if you run into snags and/or [report an issue](https://github.com/stanfordjournalism/stanford-progj-2020/issues).
+> See the [Technical FAQ page](tech_faq.md) if you run into snags and/or [report an issue](/issues).
+
+- [Services and platforms](#services-and-platforms)
+- [Windows](#windows)
+- [Text Editor](#text-editor)
+- [Shell terminal](#shell-terminal)
+- [Version control](#version-control)
+- [Configure git](#configure-git)
+- [ssh keys](#ssh-keys)
+- [Python](#python)
+- [DataKit](#datakit)
 
 ## Services/Platforms
 
 * Slack: Join the **comm-177p-progj** channel in the [StanfordJournalism][] workspace.
-* [GitHub](https://github.com/)
+* Sign up for [GitHub](https://github.com/).
 
 ## Windows
 
-Windows users will need to gain access to a Linux system.  Beginners are strongly urged to use a Desktop version of Linux that includes a graphical interface.
+Windows users will need to gain access to a Linux system.
 
-There are two officially supported options on this front. 
+### Data Journalism VM
 
-Both require you to first [install VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+We offer a Linux virtual machine with a graphical Desktop environment, pre-configured with most of the software you'll need for
+the course. To use it:
 
-Once VirtualBox is installed, below are the options listed in order of increasing complexity:
+* Download and [install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* Download the [data journalism virtual machine](https://www.dropbox.com/s/c5gfwrm3ofmejk5/stanford-dj-vm.ova?dl=0)
+* Follow the instructions in [this video](https://youtu.be/p2Ngy7smS78)
 
-* Use VirtualBox with an [Xubuntu virtual machine](https://github.com/stanfordjournalism/stanford-dj-vm#download-and-install) we've customized for this course. With this option, you can skip most of the additional installation steps below.
-* Use VirtualBox to build your own Ubuntu virtual machine from scratch. You should download the latest "LTS" desktop version (18.04 as of this writing) from the [Ubuntu downloads page][] and follow the [install VirtualBox and Ubuntu Linux][] instructions. Then perform the installations below *inside the Ubuntu virtual machine*.
+> Once you've done the above, you can skip all of the additional installation steps described below in this Technical Setup.
 
-There are also more advanced options such as:
+### VSCode and Windows Subsystem for Linux
 
-* [VSCode with a Windows Linux Subsystem](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
-* Using a dual-boot setup
-* Running Linux from a USB stick
-* Using a "headless" version of Linux (i.e. one without a graphical interface) by [installing Windows subystem for Linux on Windows 10](https://www.windowscentral.com/install-windows-subsystem-linux-windows-10)
+For users on more modern versions of Windows, you can use the Windows Subsystem for Linux. This provides a ready-made Linux shell environment (without a graphical Desktop) that integrates nicely with the Visual Studio Code Editor. 
 
-These latter options are not officially supported by course instructors at this time and are intended for more advanced users. Please consult with the instructor if you have questions about these options.
+Follow the instructions [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to get up and running.
 
-[Ubuntu downloads page]: https://ubuntu.com/download/desktop
-[install VirtualBox and Ubuntu Linux]: https://brb.nci.nih.gov/seqtools/installUbuntu.html
-
+> With this option, you will need to perform the additional Linux setup steps described below.
 
 ## Text Editor
 
@@ -43,7 +50,7 @@ You'll need a text editor designed for working with code. For beginners, we reco
 
 Mac and Linux both come with terminal programs, which provide a text-based interface to your operating system and related command-line tools. 
 
-On Mac, use `Command + spacebar` to perform a Spotlight search for "terminal".
+On Mac, use `Command + spacebar` to perform a Spotlight search for "Terminal".
 
 For a more pleasant shell experience, we strongly recommend installing [iTerm2](https://iterm2.com/).
 
@@ -96,7 +103,7 @@ git config --global --get user.name
 git config --global --get user.email
 ```
 
-## Generate ssh keys
+## ssh keys
 
 SSH keys are a best practice for secure network communications. In our case, we'll use them to more easily transfer code to and from GitHub. 
 
@@ -156,10 +163,9 @@ pyenv install 3.7.6
 pyenv global 3.7.6
 ```
 
-
 ## DataKit
 
-[DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides us with a standardized structure for all of our projects and allows us to easily submit code to GitHub.
+[DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
 
 Follow the below steps to install and configure DataKit:
 
