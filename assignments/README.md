@@ -4,8 +4,8 @@ Below is a listing of assignments and projects. Links to code solutions will be 
 
 Assignment|Description|Solution
 ----------|-----------|:-----:
-[Assignment 0][] | Tech setup; Unix practice and reading |
+[Assignment 0][] | Tech setup; Unix practice and play |
 
 
-[Assignment 0]: 0.md
+[Assignment 0]: bash_intro.md
 
