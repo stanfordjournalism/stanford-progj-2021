@@ -1,3 +1,10 @@
+## Goals
+
+> This is an *ungraded* but *important* assignment. There is no submission required.
+
+* Complete all technical setup and sign-ups for the class
+* Get comfy on the command line
+
 ## Tech setup
 
 Complete any [technical setup](../docs/tech_setup.md) that we did not have time to complete in class. If you hit snags, reach out on Slack for help.
@@ -8,7 +15,7 @@ Skim [The Unix Shell][] tutorial. **You do NOT have to do the exercises but you 
 
 ## Play
 
-> NOTE: Make sure you've completed the tech setup *before* starting this!!
+> NOTE: Make sure you've completed the [tech setup](#tech-setup) mentioned above *before* starting this!!
 
  Play the [bashcrawl](https://gitlab.com/slackermedia/bashcrawl) game. Follow the below steps to download the files and get started:
 
