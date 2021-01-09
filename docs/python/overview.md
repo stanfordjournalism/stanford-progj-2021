@@ -29,11 +29,11 @@ Newsrooms use Python in countless ways:
 
 ## What is Python?
 
-But what, precisely, is Python? Here's how it's definited in [Automate the Boring Stuff](https://automatetheboringstuff.com/2e/chapter0/):
+But what, precisely, is Python? Here's a definition from [Automate the Boring Stuff](https://automatetheboringstuff.com/2e/chapter0/):
 
 > Python is a programming language (with syntax rules for writing what is considered valid Python code) and the Python interpreter software that reads source code (written in the Python language) and performs its instructions.
 
-Pretty concise but still fairly abstract. Let's explore that definition with a simple example.
+Pretty concise, but still fairly abstract. Let's explore that definition with a simple example.
 
 Open a Terminal, type the following and hit `return`:
 
