@@ -156,10 +156,12 @@ python configure_system.py
 
 [DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
 
-Run the following command to install and configure DataKit:
+Run the following command to install DataKit:
 
 ```
 curl -s https://raw.githubusercontent.com/stanfordjournalism/cookiecutter-stanford-progj/master/requirements.txt | xargs pip install
 ```
+
+Follow [these instructions](datakit.md#first-project) to complete the DataKit setup.
 
 [DataKit]: https://datakit.ap.org/
