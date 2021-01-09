@@ -23,19 +23,29 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (winte
 
 #### Day 1 - Course Intro
 
-* Overview of the course and syllabus.
-* Discuss the [history](docs/history.md) of code and data analysis in journalism. 
-* Dip our toes into Bash. 
-* Software install party (w00t!!)
-* [Assignment 0](assignments/0.md) - Tech setup; Unix practice and reading (**Due: Wed. Jan 20th**)
+* Course overview
+* Discuss the [history](docs/history.md) of code and data analysis in journalism
+* [Software install]((docs/tech_setup.md)) party (w00t!!)
 
 #### Day 2 - The Owl, Problem Solving, and the Unix Workbench
 
 * [The Owl, Problem Solving, and the Unix Workbench](docs/owl_probs_unix.md)
-* Group problem-solving exercise
-* Hands-on bash practice with [CLI murder mystery][] and [bashcrawl][]
-* [Software installs](docs/tech_setup.md), part deux (ssh keys and Python)
-* [Assignment 0](assignments/0.md) - Tech setup; Unix practice and reading (**Due: Wed. Jan 20th**)
+* [Bash intro](https://tinyurl.com/bash-intro)
+* [Bash drill](exercises/bash_dril.md)
+* [Software installs](docs/tech_setup.md), part deux (config and Python install)
+* [Assignment 0](assignments/0.md) - Finish tech setup; Unix practice and play (**Due: Wed. Jan 20th**)
 
 [CLI murder mystery]: https://github.com/veltman/clmystery
 [bashcrawl]: https://gitlab.com/slackermedia/bashcrawl
+
+
+### Week 2
+
+#### Day 3 - MLK Day
+
+No class.
+
+#### Day 4 - Intro to DataKit
+
+* [Automating workflows](docs/automating_workflows.md) and [DataKit install](docs/datakit.md)
+* **[Assignment 1](assignments/1.md)** - Python ramp-up and Failed Banks shell script (**Due: Wed. Jan. 22nd**)

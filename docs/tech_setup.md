@@ -14,7 +14,7 @@ This course requires a number of free services and tools available on Unix/Mac s
 - [Python](#python)
 - [DataKit](#datakit)
 
-## Services/Platforms
+## Services and Platforms
 
 * Slack: Join the **comm-177p-progj** channel in the [StanfordJournalism][] workspace.
 * Sign up for [GitHub](https://github.com/).
