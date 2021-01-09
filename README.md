@@ -31,21 +31,12 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (winte
 
 * [The Owl, Problem Solving, and the Unix Workbench](docs/owl_probs_unix.md)
 * [Bash intro](https://tinyurl.com/bash-intro)
-* [Bash drill](exercises/bash_dril.md)
+* [Bash drill](exercises/bash_drill.md)
 * [Software installs](docs/tech_setup.md), part deux (config and Python install)
 * [Assignment 0](assignments/0.md) - Finish tech setup; Unix practice and play (**Due: Wed. Jan 20th**)
-
-[CLI murder mystery]: https://github.com/veltman/clmystery
-[bashcrawl]: https://gitlab.com/slackermedia/bashcrawl
-
 
 ### Week 2
 
 #### Day 3 - MLK Day
 
 No class.
-
-#### Day 4 - Intro to DataKit
-
-* [Automating workflows](docs/automating_workflows.md) and [DataKit install](docs/datakit.md)
-* **[Assignment 1](assignments/1.md)** - Python ramp-up and Failed Banks shell script (**Due: Wed. Jan. 22nd**)
