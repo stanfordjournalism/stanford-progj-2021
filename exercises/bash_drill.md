@@ -1,14 +1,21 @@
 # Bash drill
 
-A basic drill for getting reps on shell commands. Instructors can prompt students with narrative and/or have them mimic the commands as they are typed.
+A basic drill for getting reps on shell commands.
 
 Open a terminal.
 
 ```
-# Print working directory
+# The most fundamental question: Where am I?
 pwd
 
-# Navigate to desktop
+# Do you have a Desktop?
+ls
+
+# Create the Desktop, just in case
+mkdir ~/Desktop
+
+
+# Navigate to Desktop
 cd ~/Desktop
 
 # Print working directory
@@ -30,10 +37,12 @@ echo dog > animals.txt
 cat animals.txt
 
 # Append "bird" to animals.txt
-echo bird >> animals.txt
+echo bird > animals.txt
 
-# Append "cat" to animals.txt
-echo cat >> animals.txt
+# Append "hamster" to animals.txt
+# NOTE: We're using ">>" to append.
+#  Otherwise it overwrites!
+echo hamster >> animals.txt
 
 # Count the lines in animals.txt
 wc -l animals.txt
@@ -96,4 +105,11 @@ env
 # output for just the PATH variable
 env | grep PATH
 ```
-Explain/discuss shell environment variables
+
+Some things to consider/discuss/research:
+
+- What happens if I `echo 'foo' > animals.txt'`? What's the difference between `>` and `>>`?
+- What is that pipe thing ("|") all about?
+- What are shell environment variables (aka output from `env`)?
+- What other commands are "built-in" and automatically available on Unix?
+
