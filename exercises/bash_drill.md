@@ -1,6 +1,12 @@
 # Bash drill
 
-A basic drill for getting reps on shell commands.
+A basic drill for getting reps on shell commands. And some food for
+thought.
+
+- [The drill](#the-drill)
+- [To Ponder](#to-ponder)
+
+## The drill
 
 Open a terminal.
 
@@ -110,6 +116,8 @@ env | grep PATH
 # Or just echo $PATH (told ya echo is useful)
 echo $PATH
 ```
+
+## To ponder
 
 Some things to consider/discuss/research:
 
