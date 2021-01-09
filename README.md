@@ -25,7 +25,7 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (COMM 
 
 * Course overview
 * Discuss the [history](docs/history.md) of code and data analysis in journalism
-* [Software install]((docs/tech_setup.md)) party (w00t!!)
+* [Software install](docs/tech_setup.md)) party (w00t!!)
 
 #### Day 2 - The Owl, Problem Solving, and the Unix Workbench
 
