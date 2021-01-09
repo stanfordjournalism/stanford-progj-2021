@@ -19,7 +19,9 @@ Skim [The Unix Shell][] tutorial. **You do NOT have to do the exercises but you 
 
 > NOTE: Make sure you've completed the [tech setup](#tech-setup) mentioned above *before* starting this!!
 
- Play the [bashcrawl](https://gitlab.com/slackermedia/bashcrawl) game. Follow the below steps to download the files and get started:
+ Play the [bashcrawl](https://gitlab.com/slackermedia/bashcrawl) game *for 20 minutes*. Even better: Play twice on separate days. The more reps you get in, the more comfortable you'll feel on the command line!
+ 
+ Follow the below steps to download the files and get started:
 
 1. Open a Terminal (aka Bash shell)
 1. In the shell, execute the following commands: 
