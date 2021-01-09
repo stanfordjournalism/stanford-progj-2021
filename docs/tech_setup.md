@@ -1,6 +1,6 @@
 # Software, tools, etc.
 
-This course requires a number of free services and tools available on Unix/Mac systems. If you're on Windows, see below for options.
+This course requires a number of free services and tools available on Unix/Mac systems. If you're on Windows, see [below](#windows) for options.
 
 > See the [Technical FAQ page](tech_faq.md) if you run into snags and/or [report an issue](/issues).
 
@@ -9,9 +9,8 @@ This course requires a number of free services and tools available on Unix/Mac s
 - [Text Editor](#text-editor)
 - [Shell terminal](#shell-terminal)
 - [Version control](#version-control)
-- [Configure git](#configure-git)
-- [ssh keys](#ssh-keys)
 - [Python](#python)
+- [Configure via script](#configure)
 - [DataKit](#datakit)
 
 ## Services and Platforms
@@ -31,8 +30,12 @@ the course. To use it:
 * Download and [install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * Download the [data journalism virtual machine](https://www.dropbox.com/s/c5gfwrm3ofmejk5/stanford-dj-vm.ova?dl=0)
 * Follow the instructions in [this video](https://youtu.be/p2Ngy7smS78)
+* Inside the Ubuntu VM:
+  * Open the Terminal Emulator by double-clicking
+  * Type `python setup/configure_system.py` in the shell and hit `return`/`enter`
+  * Answer the questions when prompted
 
-> Once you've done the above, you can skip all of the additional installation steps described below in this Technical Setup.
+> You're done! You can skip all remaining steps below.
 
 ### VSCode and Windows Subsystem for Linux
 
@@ -40,7 +43,7 @@ For users on more modern versions of Windows, you can use the Windows Subsystem 
 
 Follow the instructions [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) to get up and running.
 
-> With this option, you will need to perform the additional Linux setup steps described below.
+> With this option, you *will* need to perform the additional Linux setup steps described below.
 
 ## Text Editor
 
@@ -56,17 +59,15 @@ For a more pleasant shell experience, we strongly recommend installing [iTerm2](
 
 ## Version control
 
-[Git][] is a [version control][] system that we'll use to save and submit all the code and data related to class assignments, exercises and projects.
+[Git][] is a [version control][] system we use to save and submit code and data for class assignments and projects.
 
 [version control]: https://en.wikipedia.org/wiki/Version_control
 
 ### Mac
 
-For beginner Mac users, install [Homebrew][], a software package manager used on the command line. Then use Homebrew to install git.
+Install [Homebrew][], a software package manager used on the command line. Then use Homebrew to install git.
 
-Open a Terminal shell (see [above](#shell-terminal)) and then run the below commands. Along the way, you'll be prompted to agree to Apple licensing terms and to provide your laptop password.
-
-> Note: The below commands are based on Steps 1-3 of [How to Install Xcode, Homebrew, Git etc.](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#laptop-script) See the blog post for more details.
+Open a Terminal shell (see [above](#shell-terminal)) and run the below commands. Along the way, you'll be prompted to agree to Apple licensing terms and to provide your laptop password.
 
 ```
 xcode-select --install
@@ -74,11 +75,11 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew doctor
-
 brew update
-
 brew install git
 ```
+
+> The commands above are based on Steps 1-3 of [How to Install Xcode, Homebrew, Git etc.](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#laptop-script) See the blog post for more details.
 
 ### Linux
 
@@ -88,36 +89,9 @@ Open a terminal shell and run:
 sudo apt install git-all
 ```
 
-## Configure git
-
-After installing [git][] (see above), open a Terminal shell and run the below git configuration commands (**make sure to replace name and email with your own**):
-
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-```
-
-Use the below commands to ensure the configuration worked:
-
-```
-git config --global --get user.name
-git config --global --get user.email
-```
-
-## ssh keys
-
-SSH keys are a best practice for secure network communications. In our case, we'll use them to more easily transfer code to and from GitHub. 
-
-Follow the instructions under [Generating a new ssh key][]. Do **not set a passphrase** when prompted (just leave it blank). Also, you do **not** have to perform the steps in *Adding your SSH key to the ssh-agent*.
-
-
-[Generating a new ssh key]: https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
-
 ## Python
 
 **Python 3.5 - 3.8**
-
-> Note: Skip this step if you're using the [Stanford Data Journalism VM](#data-journalism-vm)
 
 Before installing Python, first open a shell and run: `python --version`.
 
@@ -164,20 +138,28 @@ pyenv install 3.7.6
 pyenv global 3.7.6
 ```
 
-## DataKit
+## Configure
 
-[DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
+Open a Terminal/shell. 
 
-Follow the below steps to install and configure DataKit:
+Download and run our configuration script. You'll need to answer a few questions along the way.
 
 ```
-curl -s https://raw.githubusercontent.com/stanfordjournalism/cookiecutter-stanford-progj/master/requirements.txt | xargs pip install
+cd ~
 
 curl -O https://raw.githubusercontent.com/stanfordjournalism/stanford-dj-vm/master/configure_system.py
 
 python configure_system.py
 ```
 
-Complete the configuration steps mentioned at the end of the `python configure_system.py` script.
+## DataKit
+
+[DataKit][] is a command-line tool we'll use to manage code and data for class assignments. It provides a standardized structure for projects and allows us to easily submit code to GitHub.
+
+Run the following command to install and configure DataKit:
+
+```
+curl -s https://raw.githubusercontent.com/stanfordjournalism/cookiecutter-stanford-progj/master/requirements.txt | xargs pip install
+```
 
 [DataKit]: https://datakit.ap.org/
