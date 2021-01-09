@@ -25,8 +25,8 @@ Skim [The Unix Shell][] tutorial. **You do NOT have to do the exercises but you 
 > Note, the lines below starting with a `#` sign are code comments. You do not need to execute these in the shell.
 
 ```
-# Navigate to your Desktop
-cd ~/Desktop
+# Navigate to your user's "home" directory
+cd ~
 
 # Download the game code
 git clone https://gitlab.com/slackermedia/bashcrawl
