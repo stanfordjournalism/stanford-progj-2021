@@ -7,7 +7,9 @@
 
 ## Tech setup
 
-Complete any [technical setup](../docs/tech_setup.md) that we did not have time to complete in class. If you hit snags, reach out on Slack for help.
+Complete any [technical setup](../docs/tech_setup.md) that we did not have time to finish in class. The steps will vary depending on whether you're on Mac, Windows or Linux. If you have questions or hit snags, reach out for help.
+
+> Make sure you do this before attempting the remainder of the assignment!
 
 ## Read and practice
 
