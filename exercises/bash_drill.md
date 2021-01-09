@@ -20,16 +20,19 @@ cd ~/Desktop
 # Print working directory
 pwd
 
-# Create directory called bash-drill
+# Create a new directory
 mkdir bash-drill
 
 # Navigate into the new directory
 cd bash-drill
 
-# Create an empty file animals.txt
+# Echo echoes...to the shell. It really is useful. Trust us.
+echo dog
+
+# Create an empty file
 touch animals.txt
 
-# Echo "dog" to file
+# ...but echo can send text to a file with
 echo dog > animals.txt
 
 # Print file contents to shell
@@ -97,12 +100,15 @@ rm bash-drill/*
 # Remove the dir
 rmdir bash-drill/
 
-# Print your env
+# Print your env. Whaaaaat?????
 env
 
 # Print your env and filter the
 # output for just the PATH variable
 env | grep PATH
+
+# Or just echo $PATH (told ya echo is useful)
+echo $PATH
 ```
 
 Some things to consider/discuss/research:
@@ -110,5 +116,6 @@ Some things to consider/discuss/research:
 - What happens if I `echo 'foo' > animals.txt'`? What's the difference between `>` and `>>`?
 - What is that pipe thing ("|") all about?
 - What are shell environment variables (aka output from `env`)?
+- Why does echo print environment variables when prefixed with the `$`
+  sign? E.g. `echo $PATH`
 - What other commands are "built-in" and automatically available on Unix?
-
