@@ -64,7 +64,7 @@ For a more pleasant shell experience, we strongly recommend installing [iTerm2](
 
 For beginner Mac users, install [Homebrew][], a software package manager used on the command line. Then use Homebrew to install git.
 
-Open a Terminal shell (see above) and then run the below commands. Along the way, you'll be prompted to agree to Apple licensing terms and to provide your laptop password.
+Open a Terminal shell (see [above](#shell-terminal)) and then run the below commands. Along the way, you'll be prompted to agree to Apple licensing terms and to provide your laptop password.
 
 > Note: The below commands are based on Steps 1-3 of [How to Install Xcode, Homebrew, Git etc.](https://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/#laptop-script) See the blog post for more details.
 
@@ -76,6 +76,7 @@ xcode-select --install
 brew doctor
 
 brew update
+
 brew install git
 ```
 
@@ -114,17 +115,19 @@ Follow the instructions under [Generating a new ssh key][]. Do **not set a passp
 
 ## Python
 
-**Python 3.5 - 3.7**
+**Python 3.5 - 3.8**
+
+> Note: Skip this step if you're using the [Stanford Data Journalism VM](#data-journalism-vm)
 
 Before installing Python, first open a shell and run: `python --version`.
 
-If you have a version between Python 3.5 and 3.7, you're all set.
+If you have a version between Python 3.5 and 3.8, you're all set.
 
-If you have an older Python version (e.g. 2.7), please follow the Hitchhiker's Guide to Python [install instructions][]. 
+If you have an older Python version (e.g. 2.7), follow the below instructions.
 
 ### Mac
 
-Follow [these steps][] but skip the installation of Homebrew, which should have been installed earlier when we set up git (see above).
+Follow [these steps][] but skip the installation of Homebrew, which should have been installed earlier when we set up [git](#version-control) (see above).
 
 [install instructions]: https://docs.python-guide.org/starting/installation/
 [these steps]: https://docs.python-guide.org/starting/install3/osx/#install3-osx
@@ -138,9 +141,7 @@ Follow [these steps][] but skip the installation of Homebrew, which should have 
 
 ### Linux
 
-Use [pyenv](https://github.com/pyenv/pyenv), a tool that allows you to install and manage multiple versions of Python.
-
-> Below steps are customized for Ubuntu Linux. See the [pyenv docs](https://github.com/pyenv/pyenv#basic-github-checkout) for details on customizing for other distributions (or for Mac)
+Use [pyenv](https://github.com/pyenv/pyenv), a tool that allows you to install and manage multiple versions of Python. Run these commands from a shell:
 
 ```
 # Clone pyenv
