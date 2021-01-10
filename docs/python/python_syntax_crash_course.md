@@ -52,7 +52,7 @@ OK, now for a minimalist tour of some Python basics.
 > Be sure to type the below commands into your shell in order to begin internalizing
 the syntax.
 
-Data types are among the most basic building blocks of a programming language. Like other langauges, Python has a variety of basic [data types](https://www.w3schools.com/python/python_datatypes.asp), including integers, floating-point [numbers](https://www.w3schools.com/python/python_numbers.asp) and [strings](https://www.w3schools.com/python/python_strings.asp).
+Data types are among the most basic building blocks of a programming language. Like other languages, Python has a variety of basic [data types](https://www.w3schools.com/python/python_datatypes.asp), including integers, floating-point [numbers](https://www.w3schools.com/python/python_numbers.asp) and [strings](https://www.w3schools.com/python/python_strings.asp).
 
 Type the below values into the interactive shell.
 
@@ -262,7 +262,7 @@ Now we have *two* (yes 2!!) levels of indentation (i.e. two code blocks):
 
 So that's it (for now). We've only covered a fraction of Python syntax so far, but we're already approaching the point where we can start doing some useful work. 
 
-Be aware that you definitely should *not* expect to remember most what we just covered. Magical pixie dust will not now issue from your fingers into the machine. Learning to code is a process. You're learning a new langauge. That was your first taste. Let's start burning these new bits into your synapses with a code challenge.
+Be aware that you definitely should *not* expect to remember most of what we just covered. Magical pixie dust will not now issue from your fingers into the machine. Learning to code is a process. You're learning a new langauge. That was your first taste. Let's start burning these new bits into your synapses with a code challenge.
 
 ## Code Challenge
 
@@ -274,7 +274,7 @@ Try applying the skills we've covered (and a few new ones) to the following code
    ```
 * Create an empty list called `filtered_animals = []`
 * Loop through the list of `animals`
-* If the animal's name starts with the latter "c":
+* If the animal's name starts with the letter "c":
    * Print the name in capital letters
    * Add the name to the `filtered_animals` list
 * Print the number of `filtered_animals`, preceded by the text `"Number of C-animals: "`. 
@@ -288,7 +288,7 @@ CHIHUAHUA
 Number of C-animals: 3
 ``` 
 
-For this exercise, you'll need to use functionality that is built into Python strings. Check out these docs on [stirng methods](https://www.w3schools.com/python/python_strings_methods.asp) to figure out which ones you'll need. 
+For this exercise, you'll need to use functionality that is built into Python strings. Review these docs on [string methods](https://www.w3schools.com/python/python_strings_methods.asp) to figure out which ones you'll need. 
 
 Depending on how you approach the problem, you may also need to learn how to [slice strings](https://www.w3schools.com/python/python_strings_slicing.asp) (e.g. select the first character from the animal name).
 
