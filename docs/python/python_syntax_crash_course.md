@@ -45,7 +45,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 To quit the shell, type `exit()` and hit `return`. Or press `CTRL-D`.
 
-
 ## Python basics
 
 OK, now for a minimalist tour of some Python basics. 
@@ -57,7 +56,7 @@ Data types are among the most basic building blocks of a programming language. L
 
 Type the below values into the interactive shell.
 
-```
+```python
 >>> 2
 2
 >>> 2.5
@@ -73,7 +72,7 @@ You can write "expressions" that combine values of varying data types with opera
 
 Here's a math example:
 
-```
+```python
 >>> 2 + 3
 5
 >>> 2 * 3
@@ -82,7 +81,7 @@ Here's a math example:
 
 Here's a string example:
 
-```
+```python
 >>> 'cats' + 'dogs'
 'catsdogs'
 >>> 'cats' + ' and ' + 'dogs'
@@ -91,7 +90,7 @@ Here's a string example:
 
 Invariably, you'll run into errors. They can be jarring at first, but they're quite helpful. [Learn to love them](embracing_errors.md).
 
-```
+```python
 >>> 5 / 0
 Traceback (most recent call last):
   File "<ipython-input-15-adafc2937013>", line 1, in <module>
@@ -107,7 +106,7 @@ TypeError: can only concatenate str (not "int") to str
 
 You can compare values in Python.
 
-```
+```python
 >>> 1 > 0
 True
 >>> 1 > 2
@@ -120,7 +119,7 @@ False
 
 Things start to get interesting when we use variables. Think of variables as storage containers for values.
 
-```
+```python
 >>> height = 10
 >>> width = 5
 >>> area = height * width
@@ -134,7 +133,7 @@ Things start to get interesting when we use variables. Think of variables as sto
 
 You can change the value of variables.
 
-```
+```python
 >>> feline = 'dog?'
 >>> print(feline)
 dog?
@@ -150,14 +149,14 @@ Python includes some handy built-in functions that will come in handy. These are
 
 The `len` function lets you count the length of certain data types such as strings.
 
-```
+```python
 >>> len('cat')
 3
 ```
 
 The `print` function...well...prints things. This one is extremely handy, especially as we start writing larger Python scripts. Let's print that `area` variable we created earlier.
 
-```
+```python
 >>> print(area)
 50
 ```
@@ -165,20 +164,20 @@ The `print` function...well...prints things. This one is extremely handy, especi
 Lists, or arrays if you're coming from some other fancy programming language, allow you to store a sequence of items. You can create a list by surrounding a series of values in
 square brackets `[]`.
 
-```
+```python
 >>> [1,2,3]
 [1, 2, 3]
 ```
 Lists can store values of different data types.
 
-```
+```python
 >>> ['three', 2, 'one']
 ['three', 2, 'one']
 ```
 
 You can create an empty list and store it in a variable.
 
-```
+```python
 >>> numbers = []
 >>> numbers
 []
@@ -186,7 +185,7 @@ You can create an empty list and store it in a variable.
 
 Then, you can add data to the list.
 
-```
+```python
 >>> numbers.append(1)
 >>> numbers.append(2)
 >>> numbers.append(3)
@@ -196,7 +195,7 @@ Then, you can add data to the list.
 
 But wait, it gets better! You can ["loop"](https://www.w3schools.com/python/python_for_loops.asp) over the items in a list and perform actions on each one.
 
-```
+```python
 >>> for number in numbers:
 ...     print(number * 2)
 ...
@@ -213,7 +212,7 @@ A few key things to note about the above code:
 
 Let's add some more statements to the "block" inside the "for" loop. Remember, these operations are repeated for each integer in the list:
 
-```
+```python
 >>> for number in numbers:
 ...     times_2 = number * 2
 ...     minus_1 = number - 1
@@ -230,7 +229,7 @@ Note that the original number did not change despite the math operations perform
 
 We also haven't changed the original list of `numbers`:
 
-```
+```python
 >>> len(numbers)
 3
 >>> numbers
@@ -239,7 +238,7 @@ We also haven't changed the original list of `numbers`:
 
 Another important feature of Python is the ability to apply [conditional logic](https://www.w3schools.com/python/python_conditions.asp). Let's say we wanted to only print number greater than 1.
 
-```
+```python
 >>> for number in numbers:
 ...     if number > 1:
 ...         print(number)
