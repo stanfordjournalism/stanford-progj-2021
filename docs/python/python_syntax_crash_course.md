@@ -2,7 +2,7 @@
 # Python Syntax Crash Course
 
 - [Overview](#overview)
-- [Upgrade your shell](#upgrade-your-shell)
+- [Choose a shell](#choose-a-shell)
 - [Open and close the shell](#open-and-close-the-shell)
 - [Python basics](#python-basics)
 - [Code challenge](#code-challenge)
@@ -10,7 +10,7 @@
 ## Overview
 
 This page provides a whirlwind tour of some Python basics, including basic data types,
-variables, loops and conditionals.
+variables, loops and conditional logic (don't worry, more on these terms below).
 
 We'll run the code in an [interactive Python shell](https://pythonprogramminglanguage.com/repl/) - an environment that lets you test Python code and immediately see the results. It's low technical overhead -- the shell is available on any machine with Python installed -- and quite handy for quick-and-dirty code experimentation.
 
@@ -20,7 +20,7 @@ It's fine to do this tutorial using the normal interactive Python shell. Just op
 
 Alternatively, you can install [Ipython][] for an improved version of the shell that will make life a bit easier (it includes code highlighting and other niceties).
 
-To install Ipython, open up a termina and use [pip][], a tool for installing third-party Python libraries:
+To install Ipython, open up a terminal and use [pip][], a tool for installing third-party Python libraries:
 
 > Depending on your Python setup, you may need to use `pip3` below
 
@@ -30,11 +30,11 @@ pip install ipython
 
 ## Open and close the shell
 
-Open a terminal and type `python` or `ipython`.
+Open a Bash terminal and type `python` or `ipython`.
 
-You should now be in the interactive shell and see text that resembles the below.
+You should now be in the interactive *Python* shell and see text that resembles the below.
 
-> Note that the Ipython shell will look slightly different
+> The Ipython shell will look slightly different
 
 ```
 Python 3.7.8 (default, Jul 17 2020, 15:36:36)
@@ -43,7 +43,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-To quit the shell, type `exit()` and hit `return`. Or press `CTRL-D`.
+To quit the shell and return to Bash, type `exit()` and hit `return`. Or press `CTRL-D`.
 
 ## Python basics
 
@@ -204,11 +204,11 @@ But wait, it gets better! You can ["loop"](https://www.w3schools.com/python/pyth
 6
 ```
 
-A few key things to note about the above code:
+Hold up! Wait a minute! Let's talk. A few key things to note about the above code:
 
-* `number` is just a variable name that *automatically* stores each integer in the list as we "iterate" through the items, in order. This allows us to use the value in the context of the loop.
+* `number` is just a variable name that *automatically* stores each integer in the list as we "iterate" or "loop" through the items, in order. This allows us to use the value in the context of the loop.
 * The above code effectively means, `for <variable> in <list>:`, do stuff. There's nothing special about the name `number` for the variable. We could have just as easily said `for hamster in numbers`. But that would be strange.
-* Note the colon after `numbers:` and the indentation of the `print` statement. Python uses [indentation](https://www.w3schools.com/python/python_syntax.asp#python_indentation) (4 spaces by convention) to group related code into a "block". Above, any code that was indented to the same level as the `print` statement would take place in the context of the loop.
+* Note the colon after `numbers:` and the indentation of the `print` statement. Python uses the colon and [indentation](https://www.w3schools.com/python/python_syntax.asp#python_indentation) (4 spaces by convention) to group related code into a "block". Above, any code that was indented to the same level as the `print` statement would take place in the context of the loop.
 
 Let's add some more statements to the "block" inside the "for" loop. Remember, these operations are repeated for each integer in the list:
 
@@ -223,11 +223,19 @@ Let's add some more statements to the "block" inside the "for" loop. Remember, t
 3 | 6 | 2
 ```
 
-Above, we printed three separate items for each integer: the original value, the value multliplied by 2, and the value minus 1. 
+Above, we printed three separate items for each integer: the original value, the value multliplied by 2, and the value minus 1. And we threw in a few pipes (`|`) for readability. Not too shabby.
 
-Note that the value of `number` did not change despite the math operations performed. That's because we did not overwrite the value. We just grabbed the value stored in the variable by using its name (`number`), performed a few math operations with it, and stored the resulting values in new variables (`times_2` and `minus_1`). The value stored in `number` only changes when the code block is completed and the "loop" moves to the next item in the list. At that point, the "for" loop automatically assigns the next integer to the `number` variable.
+Note that the value of `number` did not change despite the math operations performed. That's because we didn't overwrite, or replace, the value stored in `number`. Here's what we did:
+ * Grabbed the value stored in the variable by using its name (`number`)
+ * Performed a few math operations with it
+ * Stored the resulting values of those operations in new variables (`times_2`and `minus_1`)
+ * Printed the original number and new values. With some pipes thrown into the mix.
+ 
+ Note that the value stored in `number` only changes when the code block is completed and the "loop" moves to the next item in the list. At that point, the "for" loop automatically assigns the next integer to the `number` variable.
 
-We also haven't changed the original list of `numbers`:
+ Good? Good.
+
+Oh, one more note: We also haven't changed the original list of `numbers`:
 
 ```python
 >>> len(numbers)
@@ -247,12 +255,14 @@ Another important feature of Python is the ability to apply [conditional logic](
 3
 ```
 
-Above, note that we have two levels of indentation (i.e. two code blocks):
+Now we have *two* (yes 2!!) levels of indentation (i.e. two code blocks):
 
 * The first four spaces are standard when looping. Here, we just have one `if` statement at this level.
-* Then, we have another four spaces for the `if` block. This ensures the code `print` statement will only run if the number is greater than 1.
+* Then, we have another four spaces for the `if` block. This ensures the `print` statement will only run if the number is greater than 1.
 
-We've only covered a fraction of Python syntax so far, but we're already approaching the point where we can start doing some useful work. Let's kick the tires on our new Python skills.
+So that's it (for now). We've only covered a fraction of Python syntax so far, but we're already approaching the point where we can start doing some useful work. 
+
+Be aware that you definitely should *not* expect to remember most what we just covered. Magical pixie dust will not now issue from your fingers into the machine. Learning to code is a process. You're learning a new langauge. That was your first taste. Let's start burning these new bits into your synapses with a code challenge.
 
 ## Code Challenge
 
@@ -265,7 +275,7 @@ Try applying the skills we've covered (and a few new ones) to the following code
 * Create an empty list called `filtered_animals = []`
 * Loop through the list of `animals`
 * If the animal's name starts with the latter "c":
-   * Print the name in all capital letters
+   * Print the name in capital letters
    * Add the name to the `filtered_animals` list
 * Print the number of `filtered_animals`, preceded by the text `"Number of C-animals: "`. 
 
@@ -275,12 +285,12 @@ The code should output the following:
 CAT
 CANARY
 CHIHUAHUA
-Number of C-animals: 5
+Number of C-animals: 3
 ``` 
 
 For this exercise, you'll need to use functionality that is built into Python strings. Check out these docs on [stirng methods](https://www.w3schools.com/python/python_strings_methods.asp) to figure out which ones you'll need. 
 
-Depending on how you approach the problem, you may also need to learn how to [slice strings](https://www.w3schools.com/python/python_strings_slicing.asp) (in this case, select the first character from the animal name).
+Depending on how you approach the problem, you may also need to learn how to [slice strings](https://www.w3schools.com/python/python_strings_slicing.asp) (e.g. select the first character from the animal name).
 
 >The Python walk-through above is sprinkled with links to documentation. Visit the links to refresh and learn more as you work through this code challenge. Reading documentation is a normal part of the coding process!
 
