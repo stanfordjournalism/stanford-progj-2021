@@ -52,7 +52,7 @@ OK, now for a minimalist tour of some Python basics.
 > Be sure to type the below commands into your shell in order to begin internalizing
 the syntax.
 
-Data types are among the most basic building blocks of a programming language. Like other langauges, Python has a variety of basic data types, including integers, floating-point numbers and strings.
+Data types are among the most basic building blocks of a programming language. Like other langauges, Python has a variety of basic [data types](https://www.w3schools.com/python/python_datatypes.asp), including integers, floating-point [numbers](https://www.w3schools.com/python/python_numbers.asp) and [strings](https://www.w3schools.com/python/python_strings.asp).
 
 Type the below values into the interactive shell.
 
@@ -68,7 +68,7 @@ Type the below values into the interactive shell.
 'this is a string in single quotes'
 ```
 
-You can write "expressions" that combine values of varying data types with operators. 
+You can write "expressions" that combine values of varying data types with [operators](https://www.w3schools.com/python/python_operators.asp). 
 
 Here's a math example:
 
@@ -88,7 +88,7 @@ Here's a string example:
 'cats and dogs'
 ```
 
-Invariably, you'll run into errors. They can be jarring at first, but they're quite helpful. [Learn to love them](embracing_errors.md).
+Invariably, you'll run into errors, or ["exceptions"](https://www.w3schools.com/python/python_ref_exceptions.asp) in Python lingo. They can be jarring at first, but they're quite helpful. [Learn to love them](embracing_errors.md).
 
 ```python
 >>> 5 / 0
@@ -104,7 +104,7 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 ```
 
-You can compare values in Python.
+You can [compare values](https://www.w3schools.com/python/gloss_python_comparison_operators.asp) in Python.
 
 ```python
 >>> 1 > 0
@@ -117,7 +117,7 @@ True
 False
 ```
 
-Things start to get interesting when we use variables. Think of variables as storage containers for values.
+Things start to get interesting when we use [variables](https://www.w3schools.com/python/python_variables.asp). Think of variables as storage containers for values.
 
 ```python
 >>> height = 10
@@ -143,25 +143,25 @@ dog?
 2
 ```
 
-The ability to store values in variables allows us to compose increasingly sophisticated programs, by storing the result of one step and using it another part of the code. More on that later.
+The ability to store values in variables allows us to compose increasingly sophisticated programs, by storing the result of one step and using it in another part of a program.
 
-Python includes some handy built-in functions that will come in handy. These are helpful bits of code that can perform certain operations when passed a value.
+Python includes a variety of [built-in functions](https://www.w3schools.com/python/python_ref_functions.asp) that will come in handy. These are helpful bits of code that can perform certain operations. Typically you need to pass them one or more values as input [arguments](https://www.w3schools.com/python/gloss_python_function_arguments.asp).
 
-The `len` function lets you count the length of certain data types such as strings.
+The [`len` function](https://www.w3schools.com/python/ref_func_len.asp) lets you count the number of items in a sequence, such as the characters in a string.
 
 ```python
 >>> len('cat')
 3
 ```
 
-The `print` function...well...prints things. This one is extremely handy, especially as we start writing larger Python scripts. Let's print that `area` variable we created earlier.
+The [`print` function](https://www.w3schools.com/python/ref_func_print.asp)...well...prints things. This one is extremely handy, especially as we start writing larger Python scripts. Let's print the value of the `area` variable we created earlier.
 
 ```python
 >>> print(area)
 50
 ```
 
-Lists, or arrays if you're coming from some other fancy programming language, allow you to store a sequence of items. You can create a list by surrounding a series of values in
+[Lists](https://www.w3schools.com/python/python_lists.asp), or arrays if you're coming from some other fancy programming language, allow you to store a sequence of items. You can create a list by surrounding a series of values in
 square brackets `[]`.
 
 ```python
@@ -183,7 +183,7 @@ You can create an empty list and store it in a variable.
 []
 ```
 
-Then, you can add data to the list.
+Then, you can [add data](https://www.w3schools.com/python/python_lists_add.asp) to the list.
 
 ```python
 >>> numbers.append(1)
@@ -206,9 +206,9 @@ But wait, it gets better! You can ["loop"](https://www.w3schools.com/python/pyth
 
 A few key things to note about the above code:
 
-* `number` is just a variable name that *automatically* stores each integer in the list as we "iterate" through the items, in order. This allows us to use the value in the context of the loop. 
+* `number` is just a variable name that *automatically* stores each integer in the list as we "iterate" through the items, in order. This allows us to use the value in the context of the loop.
 * The above code effectively means, `for <variable> in <list>:`, do stuff. There's nothing special about the name `number` for the variable. We could have just as easily said `for hamster in numbers`. But that would be strange.
-* Note the colon after `numbers:` and the indentation of the `print` statement. Python uses indentation (4 spaces by convention) to group together related code into a "block". Above, any code that was indented to the same level as the `print` statement would take place in the context of the loop.
+* Note the colon after `numbers:` and the indentation of the `print` statement. Python uses [indentation](https://www.w3schools.com/python/python_syntax.asp#python_indentation) (4 spaces by convention) to group related code into a "block". Above, any code that was indented to the same level as the `print` statement would take place in the context of the loop.
 
 Let's add some more statements to the "block" inside the "for" loop. Remember, these operations are repeated for each integer in the list:
 
@@ -225,7 +225,7 @@ Let's add some more statements to the "block" inside the "for" loop. Remember, t
 
 Above, we printed three separate items for each integer: the original value, the value multliplied by 2, and the value minus 1. 
 
-Note that the original number did not change despite the math operations performed. That's because we did not overwrite the value inside the indented block of code. We essentially grabbed the value stored in the variable, performed a few math operations on it and stored those new values in new variables (`times_2` and `minus_1`) -- all without changing the original value stored in `number`. That value only changes as we move to the next item in the list. The "for" loop automatically assigns the next integer to the `number` variable.
+Note that the value of `number` did not change despite the math operations performed. That's because we did not overwrite the value. We just grabbed the value stored in the variable by using its name (`number`), performed a few math operations with it, and stored the resulting values in new variables (`times_2` and `minus_1`). The value stored in `number` only changes when the code block is completed and the "loop" moves to the next item in the list. At that point, the "for" loop automatically assigns the next integer to the `number` variable.
 
 We also haven't changed the original list of `numbers`:
 
@@ -236,7 +236,7 @@ We also haven't changed the original list of `numbers`:
 [1, 2, 3]
 ```
 
-Another important feature of Python is the ability to apply [conditional logic](https://www.w3schools.com/python/python_conditions.asp). Let's say we wanted to only print number greater than 1.
+Another important feature of Python is the ability to apply [conditional logic](https://www.w3schools.com/python/python_conditions.asp). Let's say we wanted to only print numbers larger than 1.
 
 ```python
 >>> for number in numbers:
@@ -247,16 +247,42 @@ Another important feature of Python is the ability to apply [conditional logic](
 3
 ```
 
-We've only covered a fraction of Python syntax, but we're already approaching the point where we can start doing some useful work.
+Above, note that we have two levels of indentation (i.e. two code blocks):
+
+* The first four spaces are standard when looping. Here, we just have one `if` statement at this level.
+* Then, we have another four spaces for the `if` block. This ensures the code `print` statement will only run if the number is greater than 1.
+
+We've only covered a fraction of Python syntax so far, but we're already approaching the point where we can start doing some useful work. Let's kick the tires on our new Python skills.
 
 ## Code Challenge
 
-Try applying the skills we've covered so far to the following code challenge. You should continue writing the code in the interactive Python shell.
+Try applying the skills we've covered (and a few new ones) to the following code challenge.
 
-* Loop over this list:  `animals = ['cat', 'dog', 'canary', 'chihuaha', 'narwhal']`
-* If the animal's name starts with the latter 'c', then change the name to all capital letters and print the all-caps name.
+* Copy this list to the interactive Python shell:
+   ```python
+   animals = ['cat', 'dog', 'canary', 'chihuahua', 'narwhal']
+   ```
+* Create an empty list called `filtered_animals = []`
+* Loop through the list of `animals`
+* If the animal's name starts with the latter "c":
+   * Print the name in all capital letters
+   * Add the name to the `filtered_animals` list
+* Print the number of `filtered_animals`, preceded by the text `"Number of C-animals: "`. 
 
-For this exercise, you'll need to use functionality that is built into Python strings. Check out these docs on [stirng methods](https://www.w3schools.com/python/python_strings_methods.asp) to figure out which ones you'll need. Depending on how you approach the problem, you may also need to learn how to [slice strings](https://www.w3schools.com/python/python_strings_slicing.asp) (i.e. select one or more characters from a string).
+The code should output the following:
+
+```
+CAT
+CANARY
+CHIHUAHUA
+Number of C-animals: 5
+``` 
+
+For this exercise, you'll need to use functionality that is built into Python strings. Check out these docs on [stirng methods](https://www.w3schools.com/python/python_strings_methods.asp) to figure out which ones you'll need. 
+
+Depending on how you approach the problem, you may also need to learn how to [slice strings](https://www.w3schools.com/python/python_strings_slicing.asp) (in this case, select the first character from the animal name).
+
+>The Python walk-through above is sprinkled with links to documentation. Visit the links to refresh and learn more as you work through this code challenge. Reading documentation is a normal part of the coding process!
 
 
 [Ipython]: https://ipython.readthedocs.io/en/stable/
