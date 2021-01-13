@@ -19,6 +19,8 @@ curl -s --output banklist.csv https://www.fdic.gov/resources/resolutions/bank-fa
 
 # WRITE THE COMMAND HERE
 
+# Some hackery that subtracts 1 from the overall file count of ca_failed_banks.csv
+# and then spits out a message with the count on the command line.
 ROW_COUNT=`wc -l < ca_failed_banks.csv | xargs` # HACK to strip whitespace
 # SUBTRACT THE HEADER ROW FROM FINAL COUNT
 NUM_BANKS=$(($ROW_COUNT - 1))
