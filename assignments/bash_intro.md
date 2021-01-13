@@ -44,7 +44,7 @@ Now that we're comfortable in the shell, try your hand at solving a basic code c
 
 > This will constitute the graded portion of the assignment (details on submission below).
 
-We're created a starter shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca_.sh). It contains code to
+We're created a starter shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca.sh). It contains code to
 downlod a CSV of [failed banks from the FDIC](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/).
 
 Perform the following tasks:
@@ -54,7 +54,7 @@ Perform the following tasks:
   * If you see a file path to the command, you're all set
   * If you don't get any output, run `brew install curl`
 * Create a personal code directory: `mkdir ~/code/`
-* Download the starter script from [here](/code/failed_banks_ca_.sh) and save it in the `~/code` directory
+* Download the starter script from [here](https://raw.githubusercontent.com/stanfordjournalism/stanford-progj-2021/main/code/failed_banks_ca.sh) and save it in the `~/code` directory. You'll need to right click on the page in your browser to save it.
 * Open `failed_banks_ca.sh` in VS Code or another *code* editor (not MS Word!)
 * **Carefully read the script** from top to bottom
 * Complete the items marked `TODO` in order to make the script produce the expected output
