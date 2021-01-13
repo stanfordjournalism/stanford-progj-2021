@@ -45,15 +45,23 @@ echo dog > animals.txt
 cat animals.txt
 
 # Append "bird" to animals.txt
-echo bird > animals.txt
-
-# Append "hamster" to animals.txt
 # NOTE: We're using ">>" to append.
 #  Otherwise it overwrites!
+echo bird >> animals.txt
+
+# Append "hamster" to animals.txt
 echo hamster >> animals.txt
 
 # Count the lines in animals.txt
 wc -l animals.txt
+
+# You can also print the first few lines of 
+# a file using "head" (first 10 by default)
+head animals.txt
+
+# You can configure head, e.g. to just
+# output the first line
+head -1 animals.txt
 
 # Sort the words in the file
 sort animals.txt
