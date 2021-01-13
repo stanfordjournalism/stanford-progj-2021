@@ -44,10 +44,10 @@ Now that we're comfortable in the shell, try your hand at solving a basic code c
 
 > This will constitute the graded portion of the assignment (details on submission below).
 
-We've created a starter shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca.sh). It contains code to
-downlod a CSV of [failed banks from the FDIC](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/).
+We've created a "starter" shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca.sh). It contains code to
+downlod a CSV of [failed banks from the FDIC](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/) and output the count of failed banks in California. However, it's *missing critical code in the middle*. Your job is to make the code work.
 
-Perform the following tasks:
+To complete the assignment, do the following:
 
 * Open the Terminal
 * Verify that you have the `curl` command by typing: `which curl`
@@ -72,14 +72,14 @@ As you experiment with your solution by adding code to the script, you can perfo
 sh failed_banks_ca.sh
 ```
 
-Along the way, remember you can use other shell commands such as `ls` and `cat` or `head` to view files in the `~/code` directory and examine their contents.
+Along the way, remember that you can use other shell commands such as `ls` and `cat` or `head` to view files in the `~/code` directory and examine their contents. 
 
 ### Submission
 
 Once you've completed the script:
 
 * Copy and paste the contents into a [GitHub gist](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-gists#creating-a-gist)
-* Make sure the file is named properly: `ca_failed_banks.sh`
+* Make sure you've named the file properly in the Gist: `ca_failed_banks.sh`
 * Submit the URL to your Gist via Canvas
 
 
