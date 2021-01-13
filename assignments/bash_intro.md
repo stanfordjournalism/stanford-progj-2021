@@ -44,7 +44,7 @@ Now that we're comfortable in the shell, try your hand at solving a basic code c
 
 > This will constitute the graded portion of the assignment (details on submission below).
 
-We're created a starter shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca.sh). It contains code to
+We've created a starter shell script called [`failed_banks_ca.sh`](/code/failed_banks_ca.sh). It contains code to
 downlod a CSV of [failed banks from the FDIC](https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/).
 
 Perform the following tasks:
