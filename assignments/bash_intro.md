@@ -1,9 +1,7 @@
 ## Goals
 
-> This is an *ungraded* but *important* assignment. There is no submission required.
-
 * Get comfy on the command line
-* Create a command-line script
+* Complete a shell script to filter for failed banks
 
 - [Read and practice](#read-and-practice)
 - [Play](#play)
