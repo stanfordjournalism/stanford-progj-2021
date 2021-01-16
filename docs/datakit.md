@@ -19,9 +19,11 @@ DataKit will help us streamline our workflow while applying best practices from 
 
 * Create standard project structures for all code work
 * Use [virtual environments](https://docs.python.org/3/tutorial/venv.html) for Python (using [pipenv](https://docs.python-guide.org/dev/virtualenvs/))
-* Save code and data in [version control](https://en.wikipedia.org/wiki/Version_control) ([git](https://git-scm.com/book/en/v2))
+* Save code and data in [version control](https://en.wikipedia.org/wiki/Version_control) ([git][])
 * Publish our work to GitHub, making it easy to open-source if we choose
 * Easily share our work with instructors
+
+[git]: https://git-scm.com/book/en/v2
 
 See [here](https://github.com/stanfordjournalism/cookiecutter-stanford-progj) for more details on our classroom workflow and customizations.
 
@@ -43,9 +45,9 @@ At the end, we display the contents of the generated project.
 Some important bits to note:
 
 * A new git repository has been created on your local machine: `test-project/`
-* A corresponding GitHub project has been created, in this example, at `https://github.com/zstumgoren/test-project`). This GitHub project is linked to the newly created *local* repository, so that you can easily push local changes back to GitHub.
-* The new GitHub project is private, because we accept the default when prompted. We'll generally make our projects private at the outset, although you have the option to later make them public.
-* If you look inside the new `test-project/` folder on your machine, you should see a bunch of initial project files and directories have been created for you.
+* A corresponding GitHub project has been created, in this example, at `https://github.com/zstumgoren/test-project`. This GitHub project is linked to the newly created *local* repository, so that you can easily push local changes back to GitHub.
+* The new GitHub project is private, because we accepted that as the default when prompted. We'll generally create private projects at the outset, although you have the option to later make them public.
+* If you look inside the new `test-project/` folder on your machine, you should see a bunch of initial project files and directories have been created.
 
 If you visit the GitHub project, you would see that these files have been saved to GitHub as well.
 
@@ -69,9 +71,10 @@ To kick off the process, run the following.
 datakit project create --template gh:stanfordjournalism/cookiecutter-stanford-progj
 ```
 
-As mentioned above, the shell will display the URL for the auto-generated GitHub project. 
+This process prints a lot of information to the shell. Take note in particlar of the URL for the auto-generated GitHub project (e.g. <https://github.com/zstumgoren/test-project>).
 
-It will also notify you about next steps, which involve navigating into the newly created repository on your shell and installing some Python libraries.
+
+You'll also see some reminders about next steps for working with the new project -- specifically, navigating into the newly created repository on your shell and installing some Python libraries.
 
 ```
 # Navigate to the newly created project folder
@@ -83,28 +86,41 @@ pipenv install
 
 Next, you should activate the virtual environment:
 
-> Note, this is mainly needed for Python work, but it's a good habit in general. We'll talk in class about why this is a good habit.
+> Note, this is mainly needed for Python work, but it's a good habit in general. We'll talk in class about why.
 
 ```
 pipenv shell
 ```
 
 
-At this point, you could add new files to the project, for example a Python or Bash script. Normally you'll use a text editor such as Visual Studio Code to create and save new files. Just make sure to save those files *inside* this newly created directory.
+At this point, you could add new files to the project, for example a Python or Bash script. Normally you'll use a text editor such as Visual Studio Code to create and save new files. 
 
-Hitting save in your text/code editor is step 1 in the "saving" process. You also need to save your code using the [git][] version version control system. This is like a local, versioned database of all the incremental changes made to your files. 
+Just make sure to save those files somewhere *inside* this newly created project folder. A python or Bash script, for example, should go in the `scripts/` directory.
 
-Once you've saved to your local git, you can "push" those changes up to GitHub.
+Saving code in your text editor is the first part of a multi-step "saving" process. You also need to save your code using the [git][] version version control system. Think of this project folder as containing a local, versioned database of all the incremental changes made to your files.
+
+These changes can be saved by run running the following from *inside* the project directory:
 
 ```
+# Navigate to the project folder
+cd test-project/
+
+# Activate the environment, if you haven't already
+pipenv shell 
+
 # Save your work locally to git
 invoke code.save
+```
 
-# Push work to GitHub
+Once you've saved changes locally, you can "push" those changes up to GitHub.
+
+```
 invoke code.push
+```
 
-# When you're done working,
-# deactivate the virtual environment
+When you're done working, deactivate the virtual environment:
+
+```
 exit
 ```
 
@@ -126,7 +142,8 @@ Here's the short list of commands you'll need when working with an existing proj
 # Navigate to the project folder
 cd test-project/
 
-# Install Python dependencies
+# Install Python dependencies, typically
+# after the project is first projected
 pipenv install
 
 # Activate a sandboxed environment for this project
