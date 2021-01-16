@@ -34,26 +34,18 @@ Follow the steps in [Tech Setup - DataKit](tech_setup.md#datakit). *Note, you mu
 
 When you run DataKit on the command line, it will ask you a series of questions that help configure the new project. The questions will often have default values shown in square brackets `[]`. 
 
-You can simply hit `return` to accept the defaults, or type in an answer as necessary. Below is a **truncated** example session showing the initial questions and default values.
+You can simply hit `return` to accept the defaults, or type in an answer as necessary. Below is an example session showing the initial questions and default values.
 
-You can see below that we entered "1" for the project number and "FDIC Failed Banks shell script" for the project short description. Otherwise, we accepted the default values.
+At the end, we display the contents of the generated project. 
 
-![datakit default values](../static/datakit_default_values.png)
-
-After the initial configuration above, you'll be prompted to decide a few other things, such as whether to make the project private or public on GitHub (we'll generally make our projects private, although you have the option to later make them public).
-
-Once the script finishes running, you should see output on the shell such as below
-
-![datakit create final output on shell](../static/datakit_create_end_of_shell_output.png)
+![datakit project create gif](https://www.dropbox.com/s/ghjtubbfb4l66ns/datakit-project-create.gif?raw=1)
 
 Some important bits to note:
 
-* A new git repository has been created on your local machine: `comm-177p-exercise-csvkit-test/`
-* A corresponding GitHub project has been created, in this example, at `https://github.com/zstumgoren/comm-177p-exercise-csvkit-test`). This GitHub project is linked to the newly created *local* repository, so that you can easily push local changes back to GitHub.
-
-If you look inside the new local repo, you should see that a bunch of initial project files and directories have been created for you.
-
-![datakit project tree](../static/datakit_project_tree.png)
+* A new git repository has been created on your local machine: `test-project/`
+* A corresponding GitHub project has been created, in this example, at `https://github.com/zstumgoren/test-project`). This GitHub project is linked to the newly created *local* repository, so that you can easily push local changes back to GitHub.
+* The new GitHub project is private, because we accept the default when prompted. We'll generally make our projects private at the outset, although you have the option to later make them public.
+* If you look inside the new `test-project/` folder on your machine, you should see a bunch of initial project files and directories have been created for you.
 
 If you visit the GitHub project, you would see that these files have been saved to GitHub as well.
 
@@ -69,35 +61,43 @@ The first time you run DataKit will be a little bit different than subsequent us
 
 When you first run DataKit, it will install this template locally, simplifying future usage.
 
-As a first project, let's assume you've created a [data processing script using csvkit](power_tools_for_data_wrangling.md#wrangling-with-csvkit).
+To kick off the process, run the following. 
 
-Execute the following command and answer the questions as specified below:
-
-* Choose `2 - Exercise` as "repo_type" 
-* Type `csvkit` for "project\_number\_or\_shortname" 
-* For all other prompts, hit `return` to accept default values
+> Type "Test Project" when prompted for the `project_name`. For all other prompts, hit `return` to accept the default values.
 
 ```
 datakit project create --template gh:stanfordjournalism/cookiecutter-stanford-progj
 ```
 
-As mentioned above, the shell will display the URL for the auto-generated GitHub project. It will also notify you about next steps, which involve navigating into the newly created repository on your shell and installing some Python libraries.
+As mentioned above, the shell will display the URL for the auto-generated GitHub project. 
+
+It will also notify you about next steps, which involve navigating into the newly created repository on your shell and installing some Python libraries.
 
 ```
 # Navigate to the newly created project folder
-cd comm-177p-exercise-csvkit/
+cd test-project/
 
 # Install Python dependencies
 pipenv install
+```
 
-# Copy your csvkit code to the new project
-# NOTE: Substitute the actual path to csv_wrangle.sh on your machine
-cp /path/to/csvkit_wrangle.sh scripts/csvkit_wrangle.sh
+Next, you should activate the virtual environment:
 
-# Activate a sandboxed environment for this project
+> Note, this is mainly needed for Python work, but it's a good habit in general. We'll talk in class about why this is a good habit.
+
+```
 pipenv shell
+```
 
-# Save your work locally
+
+At this point, you could add new files to the project, for example a Python or Bash script. Normally you'll use a text editor such as Visual Studio Code to create and save new files. Just make sure to save those files *inside* this newly created directory.
+
+Hitting save in your text/code editor is step 1 in the "saving" process. You also need to save your code using the [git][] version version control system. This is like a local, versioned database of all the incremental changes made to your files. 
+
+Once you've saved to your local git, you can "push" those changes up to GitHub.
+
+```
+# Save your work locally to git
 invoke code.save
 
 # Push work to GitHub
@@ -124,12 +124,15 @@ Here's the short list of commands you'll need when working with an existing proj
 
 ```
 # Navigate to the project folder
-cd comm-177p-exercise-csvkit/
+cd test-project/
+
+# Install Python dependencies
+pipenv install
 
 # Activate a sandboxed environment for this project
 pipenv shell
 
-# Save your work locally
+# Save your work locally to git
 invoke code.save
 
 # Push work to GitHub
