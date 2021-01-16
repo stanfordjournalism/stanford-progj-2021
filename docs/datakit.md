@@ -69,7 +69,7 @@ To kick off the process, run the following.
 datakit project create --template gh:stanfordjournalism/cookiecutter-stanford-progj
 ```
 
-This process prints a lot of information to the shell. Take note in particlar of the URL for the auto-generated GitHub project (e.g. <https://github.com/zstumgoren/test-project>).
+This process prints a lot of information to the shell. Take note in particular of the URL for the auto-generated GitHub project (e.g. <https://github.com/zstumgoren/test-project>).
 
 
 You'll also see some reminders about next steps for working with the new project -- specifically, navigating into the newly created repository on your shell and installing some Python libraries.
@@ -96,7 +96,7 @@ Just make sure to save code files somewhere *inside* this newly created project 
 
 ### The git two-step
 
-You should think of this new project folder as much more than a mere collection of files and directories. Instead, it's more akin to a system for storing all of the incremental changes made to your files over time. This is an incredibly powerful and useful way of working, but it does require a bit more overhead to manage.
+You should think of this new project folder as much more than a mere collection of files and directories. Instead, it's more akin to a system for storing all of the incremental changes made to your files over time. This is an incredibly powerful and [useful way of working](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/why-use-version-control/), but it does require a bit more overhead to manage.
 
 With this type of workflow, saving code in your text editor is the first part of a multi-step "saving" process. You also need to save your code using the [git][] version control system.
 
