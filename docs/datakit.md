@@ -36,7 +36,7 @@ Follow the steps in [Tech Setup - DataKit](tech_setup.md#datakit). *Note, you mu
 
 When you run DataKit on the command line, it will ask you a series of questions that help configure the new project. The questions will often have default values shown in square brackets `[]`. 
 
-You can simply hit `return` to accept the defaults, or type in an answer as necessary. Below is an example session showing demonstrating the workflow.
+You can simply hit `return` to accept the defaults, or type in an answer as necessary. Below is an example session demonstrating the workflow.
 
 At the end, we display the contents of the generated project. 
 
