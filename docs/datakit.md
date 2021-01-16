@@ -146,7 +146,7 @@ Here's the short list of commands you'll need when working with an existing proj
 cd test-project/
 
 # Install Python dependencies, typically
-# after the project is first projected
+# after the project is first created
 pipenv install
 
 # Activate a sandboxed environment for this project
