@@ -44,18 +44,16 @@ At the end, we display the contents of the generated project.
 
 Some important bits to note:
 
-* A new git repository has been created on your local machine: `test-project/`
+* A new project folder (i.e. a new git repository) has been created on your local machine: `test-project/`
 * A corresponding GitHub project has been created, in this example, at `https://github.com/zstumgoren/test-project`. This GitHub project is linked to the newly created *local* repository, so that you can easily push local changes back to GitHub.
 * The new GitHub project is private, because we accepted that as the default when prompted. We'll generally create private projects at the outset, although you have the option to later make them public.
 * If you look inside the new `test-project/` folder on your machine, you should see a bunch of initial project files and directories have been created.
+* The project includes a `README.md` that contains reminders on [daily workflow](#day-to-day-with-datakit).
 
 If you visit the GitHub project, you would see that these files have been saved to GitHub as well.
 
 ![datakit github files](../static/datakit_github_project_files.png)
 
-Finally, the project includes a `README.md` that contains reminders on daily workflow (discussed in more detail below).
-
-You should now have a high-level sense of what DataKit does. In the next section, we'll use DataKit to create our first project.
 
 ## First project
 
