@@ -90,14 +90,19 @@ Next, you should activate the virtual environment:
 pipenv shell
 ```
 
+At this point, you could add new files to the project, for example a Python or Bash script. Normally you'll use a text editor such as Visual Studio Code to create and save new files.
 
-At this point, you could add new files to the project, for example a Python or Bash script. Normally you'll use a text editor such as Visual Studio Code to create and save new files. 
+Just make sure to save code files somewhere *inside* this newly created project folder. A Bash or Python script, for example, should go in the `scripts/` directory.
 
-Just make sure to save those files somewhere *inside* this newly created project folder. A python or Bash script, for example, should go in the `scripts/` directory.
+### The git two-step
 
-Saving code in your text editor is the first part of a multi-step "saving" process. You also need to save your code using the [git][] version version control system. Think of this project folder as containing a local, versioned database of all the incremental changes made to your files.
+You should think of this new project folder as much more than a mere collection of files and directories. Instead, it's more akin to a system for storing all of the incremental changes made to your files over time. This is an incredibly powerful and useful way of working, but it does require a bit more overhead to manage.
 
-These changes can be saved by run running the following from *inside* the project directory:
+With this type of workflow, saving code in your text editor is the first part of a multi-step "saving" process. You also need to save your code using the [git][] version control system.
+
+We've provided some basic shell commands that will simplify the process of saving code to your local git repository and "pushing" those changes to GitHub.
+
+To use the commands, make sure you've navigated *inside* the project directory:
 
 ```
 # Navigate to the project folder
