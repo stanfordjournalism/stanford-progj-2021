@@ -40,3 +40,10 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (COMM 
 #### Day 3 - MLK Day
 
 No class.
+
+#### Day 4 - Python Intro
+
+* Bash questions?
+* [Python overview and coding contexts](docs/python/overview.md)
+* [Python Syntax Crash Course](docs/python/python_syntax_crash_course.md)
+* **[Assignment 1](assignments/python_intro.md)** - Python reading/practice and code challenge
