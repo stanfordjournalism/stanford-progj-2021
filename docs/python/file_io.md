@@ -15,9 +15,11 @@ Learning how to read and write files is an essential programming task.
 
 Below are some examples intended to demonstrate some basic techniques in an interactive Python shell session. 
 
-> Most examples below use the [animals.csv][] file from this repo. To follow along, open an interactive Python interpreter by typing `python` or `ipython` (if you've installed it) on the command line.
+> Most examples below use the [animals.csv][]. You should download this file by clicking the `Raw` button. Then "right-click" and save the file.
 
-[animals.csv]: https://raw.githubusercontent.com/stanfordjournalism/stanford-progj-2020/master/data/animals.csv
+[animals.csv]: /data/animals.csv
+
+To follow along, open an interactive Python interpreter by typing `python` or `ipython` (if you've installed it) on the command line.
 
 ## Opening and closing files
 
