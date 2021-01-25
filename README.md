@@ -63,5 +63,5 @@ No class.
 
 * [Automating workflows](docs/automating_workflows.md)
 * [DataKit overview](docs/datakit.md)
-* Complete Python install, then [DataKit install](docs/datakit.md)
+* Complete Tech Setup [configuration](docs/tech_setup.md#configure) and install [DataKit](docs/datakit.md)
 * Assignment - TBD
