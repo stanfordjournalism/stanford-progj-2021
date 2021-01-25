@@ -47,3 +47,21 @@ No class.
 * [Python overview and coding contexts](docs/python/overview.md)
 * [Python Syntax Crash Course](docs/python/python_syntax_crash_course.md)
 * **[Assignment 1](assignments/python_intro.md)** - Python reading/practice and code challenge
+
+
+### Week 3
+
+#### Day 5 - Python Intro Part Deux
+
+* [Assignment 1](assignments/python_intro.md) questions?
+* [Dictionaries crash course](docs/python/dict_basics.md)
+* [Reading and writing text files](docs/python/file_io.md)
+* **[Assignment 2](assignments/python_lists_dicts.md)** - Python lists/dicts and DataKit overview
+
+
+#### Day 6 - Automating Workflows and DataKit
+
+* [Automating workflows](docs/automating_workflows.md)
+* [DataKit overview](docs/datakit.md)
+* Complete Python install, then [DataKit install](docs/datakit.md)
+* Assignment - TBD
