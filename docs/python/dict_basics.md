@@ -7,7 +7,7 @@
 
 ## Overview
 
-Python dictionaries are a flexible storage containers. Along with lists, dictionaries are a major workhorse in programs and scripts.
+Python dictionaries are flexible storage containers that, similar to lists, are a major workhorse for doing real work with the language.
 
 Dictionaries allow you to store values of varying types, from  simple integers and strings to lists, dictionaries and other data types and objects. 
 
