@@ -8,7 +8,7 @@ Below are the major topics we'll cover:
   * What is Python?
   * Coding contexts and workflow
 * Core [Python syntax](python_syntax_crash_course.md) and features
-  * Basic data types (integers, strings, lists, dicts)
+  * Basic data types (integers, strings, lists, [dicts](dict_basics.md))
   * Expressions and statements
   * Variables as storage containers
   * Flow control ("for" loops and if/elif/else)
