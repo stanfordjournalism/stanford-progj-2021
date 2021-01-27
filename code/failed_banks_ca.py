@@ -15,7 +15,7 @@ USAGE:
 # TODO: IMPORT MODULES HERE
 
 # URL TO THE FDIC BANKS DATA
-url = 'https://www.fdic.gov/bank/individual/failed/banklist.csv'
+url = 'https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/banklist.csv'
 
 # TODO: Use the requests library to fetch the FDIC data
 
