@@ -78,7 +78,7 @@ Standard package management tools such as [pip](https://pip.pypa.io/en/stable/) 
 
 For example, to install the [requests][] library into `awesome-project`: 
 
-[requests]: https://2.python-requests.org/en/master/
+[requests]: https://requests.readthedocs.io/en/master/
 
 ```
 cd /path/to/awesome-project
