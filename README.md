@@ -64,4 +64,4 @@ No class.
 * [Automating workflows](docs/automating_workflows.md)
 * [DataKit overview](docs/datakit.md)
 * Complete Tech Setup [configuration](docs/tech_setup.md#configure) and install [DataKit](docs/datakit.md)
-* [Assignment 3](assignments/libraries_and_fdic_py.md) - Practical Python skills and Failed Banks in Python
+* **[Assignment 3](assignments/libraries_and_fdic_py.md)** - Practical Python skills and Failed Banks in Python
