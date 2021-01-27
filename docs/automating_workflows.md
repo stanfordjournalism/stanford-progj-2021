@@ -7,7 +7,7 @@ knowledge to dip into. They're intimately familiar with the trends and key playe
 
 In a similar vein, data journalists and newsroom developers just starting out often work in ad hoc, "messy" ways. This is natural when you join a team, learn a new technology, etc. But over time, these technical-minded journalists build up a stable of tools and resources to help themselves and [their colleagues][] work at the speed of news.
 
-We can "identify reporting patterns that come up a lot and develop tools that help reporters handle these tasks more efficiently," wrote Tiff Fehr, an NYT interactive news developer, in a [story about a tool][] that lets reporters sift through large document dumps. "The job is part coach and part coder, listening for pain points and evaluating possible solutions, whether those fixes take the shape of work flow adjustments or custom software."
+They can "identify reporting patterns that come up a lot and develop tools that help reporters handle these tasks more efficiently," wrote Tiff Fehr, an NYT interactive news developer, in a [story about a tool][] that lets reporters sift through large document dumps. "The job is part coach and part coder, listening for pain points and evaluating possible solutions, whether those fixes take the shape of work flow adjustments or custom software."
 
 Newsroom coders such as Tiff make a virtue of "laziness." Here are a few examples of their work:
 
