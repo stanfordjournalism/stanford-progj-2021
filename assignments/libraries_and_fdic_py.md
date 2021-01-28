@@ -7,9 +7,9 @@
 
 > The skills covered in the tutorials below are needed to complete the Failed Banks assignment. Be sure to carefully work through these *before* attempting the coding assignment.
 
-* Learn how to use [code libraries](docs/python/libraries.md) included with Python or offered by third parties
-* Learn how to [download remote files](docs/python/remote_files.md)
-* Learn how to [work with CSVs](docs/python/csv.md)
+* Learn how to use [code libraries](/docs/python/libraries.md) included with Python or offered by third parties
+* Learn how to [download remote files](/docs/python/remote_files.md)
+* Learn how to [work with CSVs](/docs/python/csv.md)
 
 
 ## Failed CA Banks python script
