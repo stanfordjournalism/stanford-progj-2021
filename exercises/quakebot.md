@@ -32,7 +32,7 @@ There were 6 earthquakes in the last hour:
 ## Converting the quake timestamp
 
 The USGS provides the time of quakes in what's known as [epoch time](https://en.wikipedia.org/wiki/Epoch_(computing)), typically
-the number of *seconds* since the 1970. The USGS time is actually in milliseconds since 1970, so you'll need to 
+the number of *seconds* since the beginning of the year 1970. The USGS time is actually in milliseconds since 1970, so you'll need to 
 divide the time by 1000 and then investigate the [utcfromtimestamp](https://docs.python.org/3/library/datetime.html#datetime.datetime.utcfromtimestamp) method in the datetime module to convert the time.
 
 
