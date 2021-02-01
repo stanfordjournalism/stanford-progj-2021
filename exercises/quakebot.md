@@ -5,7 +5,7 @@ You'll need a combination of skills to complete this exercise:
 * How to [request remote data](/docs/python/remote_files.md) using the `requests` library
 * How to [work with an API](docs/python/working_with_apis.md) in Python (really, a feed in this case)
 * How to [convert a timestamp](#converting-the-quake-timestamp)
-* An understanding of how to work with JSON data
+* An understanding of how to [work with JSON data](https://realpython.com/python-json/)
 * How to create a story template using "f-strings" or other [string
   templating support in Python](https://data-driven.news/bna/2019/day/7/#mad-libs-with-strings-and-templates)
 
