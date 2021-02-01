@@ -58,10 +58,18 @@ No class.
 * [Reading and writing text files](docs/python/file_io.md)
 * **[Assignment 2](assignments/python_lists_dicts.md)** - Python lists/dicts and DataKit overview
 
-
 #### Day 6 - Automating Workflows and DataKit
 
 * [Automating workflows](docs/automating_workflows.md)
 * [DataKit overview](docs/datakit.md)
 * Complete Tech Setup [configuration](docs/tech_setup.md#configure) and install [DataKit](docs/datakit.md)
 * **[Assignment 3](assignments/libraries_and_fdic_py.md)** - Practical Python skills and Failed Banks in Python
+
+### Week 4
+
+#### Day 7 - APIs and the News
+
+* [APIs and the News](/docs/apis_and_the_news.md) overview and [presentation](https://tinyurl.com/apis-and-the-news)
+* [Working with APIs](/docs/python/working_with_apis.md) - *As of Feb. 1, 2021, certain unauthenticated OpenCorporates API endpoints were disabled due to excessive bot usage, so not all portions of the tutorial are functional.*
+* [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with JSON feed
+
