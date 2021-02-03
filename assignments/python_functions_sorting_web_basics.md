@@ -13,7 +13,7 @@
 * Functions:
   * [Art of Writing Functions](/docs/python/art_of_functions.md)
   * [W3Schools Python Functions](https://www.w3schools.com/python/python_functions.asp)
-  * [Chapter 3 - Functions](https://automatetheboringstuff.com/2e/chapter3/) of *Automate the Boring Stuff*. As always, no need to do exercises. Just work through code examples to begin familiarizing yourself with the basics of Pythom functions.
+  * [Chapter 3 - Functions](https://automatetheboringstuff.com/2e/chapter3/) of *Automate the Boring Stuff*. As always, no need to do exercises. Just work through code examples to begin familiarizing yourself with the basics of Python functions.
 
 ## Web basics
 
