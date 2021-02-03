@@ -1,10 +1,15 @@
-# Assignment 7 - Breaking Ranks on Impeachment
+# Senate Compromisers
 
 - [Overview](#overview)
 - [Setup](#setup)
 - [Coding details](#coding-details)
 - [Important notes](#important-notes)
 - [Submitting](#submitting)
+
+## Goals
+
+* Learn how to use an API.
+* Use Python functions and sorting in the context of a script.
 
 ## Overview
 
@@ -35,7 +40,9 @@ Sign up for a [ProPublica API Key](https://www.propublica.org/datastore/api/prop
 
 ### Store the API key
 
-Store the following code in `~/.bash_profile`, replacing `your_api_key` with the actual key: 
+Store the following code in `~/.bash_profile` if you're on a Mac or, if you're on Linux, in `~/.bashrc`. You'll need to replace `your_api_key` with the actual key: 
+
+> Here's how to [edit hidden files on a Mac](/docs/tech_faq.md#how-do-i-edit-hidden-files-on-a-mac).
 
 ```
 # Below line goes in your ~/.bash_profile
@@ -49,11 +56,11 @@ printenv | grep PROPUBLICA
 PROPUBLICA_API_KEY=your_api_key
 ```
 
-If you have problems with this step, please refer to [Using environment variables to store secrets](../docs/python/using_env_vars_for_secrets.md) or reach out for help.
+If you have problems with this step, please refer to [Using environment variables to store secrets](/docs/python/using_env_vars_for_secrets.md) or reach out for help.
 
 ## Create a datakit project
 
-Create a new [DataKit](../docs/datakit.md) project named `Senate Compromisers`. The generated project (locally and on GitHub) should be `senate-compromisers`.
+Create a new [DataKit](../docs/datakit.md) project named `Senate Compromisers`. This should produce a local directory and related GitHub project called `senate-compromisers`.
 
 ```
 cd ~/Desktop/code
@@ -64,13 +71,13 @@ cd senate-compromisers
 pipenv install
 ```
 
-Download the [`senate_rank_breakers.py`](../code/senate_compromisers.py) starter script and save it to your project's `scripts/` directory. Remember, you need to click the "Raw" button on GitHub to get access to a plain-text version of the file for download.
+Download the [`senate_compromisers.py`](/code/senate_compromisers.py) starter script and save it to your project's `scripts/` directory. Remember, you need to click the "Raw" button on GitHub to get access to a plain-text version of the file for download.
 
 ## Coding details
 
 Now you're ready to flesh out the script. Below are the requirements:
 
-* Use the `requests` library to get data for all members of the current senate from the ProPublica API. To make this API request you will need to read:
+* Use the `requests` library to get data for all members of the current senate from the ProPublica API. We've actually provided some starter code for this step, but you should review the following to ensure you understand the code:
   * The Propublica API docs for [Authentication](https://projects.propublica.org/api-docs/congress-api/#authentication) and [Members](https://projects.propublica.org/api-docs/congress-api/members/)
   * The `requests` library docs on how to make a web request with [custom headers](https://2.python-requests.org/en/master/user/quickstart/#custom-headers)
 * Using the members data, find the 5 members of both parties with the highest "votes against party" (or lowest "votes with party") percentages.
@@ -102,8 +109,9 @@ Republican
 ## Important notes
 
 * The Senate has a few Independents who are denoted in the ProPublica members data with an `ID` value for the `party` field. In a real-world analysis, we'd likely want to take Independents into account. For this exercise, it's fine to skip the Independents.
-* You must adhere to the best practices laid out in the [Art of Writing Functions](/docs/python/art_of_functions.md). Specifically, you must create well-named functions for each distinct step in the process described above, and use a "main" function at the top of your script to orchestrate all the other functions. The [`senate_compromisers.py`](/code/senate_compromisers.py) script that we've provided starts you off on this process, so please be sure to use it.
 * Be sure to work through the Python readings on [sorting and functions](python_functions_sorting_web_basics.md). You'll need a good feel for them to complete this assignment!
+* You must adhere to the best practices laid out in the [Art of Writing Functions](/docs/python/art_of_functions.md). Specifically, you must create well-named functions for each distinct step in the process described above, and use a "main" function at the top of your script to orchestrate all the other functions. The [`senate_compromisers.py`](/code/senate_compromisers.py) script that we've provided starts you off on this process, so please be sure to use it.
+
 
 ## Submitting
 
