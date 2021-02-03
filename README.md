@@ -71,5 +71,11 @@ No class.
 
 * [APIs and the News](/docs/apis_and_the_news.md) overview and [presentation](https://tinyurl.com/apis-and-the-news)
 * [Working with APIs](/docs/python/working_with_apis.md) - *As of Feb. 1, 2021, certain unauthenticated OpenCorporates API endpoints were disabled due to excessive bot usage, so not all portions of the tutorial are functional.*
-* [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with JSON feed
+* [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with a JSON feed
 
+#### Day 8 - 
+
+* [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with JSON feed
+* [The Art of Writing Functions](/docs/python/art_of_functions.md)
+* **[Assignment 4](assignments/python_functions_sorting_web_basics.md)** - Study Python functions, sorting and web basics
+* **[Assignment 5](assignments/senate_compromisers.md.md)** - Senate compromisers Python script
