@@ -78,4 +78,4 @@ No class.
 * [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with JSON feed
 * [The Art of Writing Functions](/docs/python/art_of_functions.md)
 * **[Assignment 4](assignments/python_functions_sorting_web_basics.md)** - Study Python functions, sorting and web basics
-* **[Assignment 5](assignments/senate_compromisers.md.md)** - Senate compromisers Python script
+* **[Assignment 5](assignments/senate_compromisers.md)** - Senate compromisers Python script
