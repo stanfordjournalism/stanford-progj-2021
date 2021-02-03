@@ -73,7 +73,7 @@ No class.
 * [Working with APIs](/docs/python/working_with_apis.md) - *As of Feb. 1, 2021, certain unauthenticated OpenCorporates API endpoints were disabled due to excessive bot usage, so not all portions of the tutorial are functional.*
 * [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with a JSON feed
 
-#### Day 8 - 
+#### Day 8 - Quakebot and Python Functions
 
 * [Quakebot exercise](/exercises/quakebot.md) - hands-on practice with JSON feed
 * [The Art of Writing Functions](/docs/python/art_of_functions.md)
