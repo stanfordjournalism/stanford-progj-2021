@@ -5,7 +5,7 @@ For this exercise, let's create our own basic [Quakebot][].
 You'll need a combination of skills to complete this exercise:
 
 * How to [request remote data](/docs/python/remote_files.md) using the `requests` library
-* How to [work with an API](docs/python/working_with_apis.md) in Python (really, a feed in this case)
+* How to [work with an API](/docs/python/working_with_apis.md) in Python (really, a feed in this case)
 * How to [convert a timestamp](#converting-the-quake-timestamp)
 * An understanding of how to [work with JSON data](https://realpython.com/python-json/)
 * How to create a story template using "f-strings" or other [string
