@@ -70,9 +70,6 @@ def get_members_data(api_key):
     return data
 
 
-# Use the standard convention for triggering
-# the "main" function when the script is
-# invoked on the command line:
-# https://docs.python.org/3/library/__main__.html
-if __name__ == "__main__":
-    main()
+
+# Kick off the script by calling the "main" function
+main()
