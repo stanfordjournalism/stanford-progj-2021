@@ -27,8 +27,6 @@ import requests
 # other functions defined below. The "main" function
 # is also commonly placed at the end the script, but
 # I like putting it at the top to improve readability.
-# See the bottom of the script for a common
-# Python "idiom" for invoking the "main" function.
 def main():
     api_key = os.environ["PROPUBLICA_API_KEY"]
     members = get_members_data(api_key)
@@ -38,7 +36,8 @@ def main():
 
 ### TASK-SPECIFIC FUNCTIONS GO HERE ###
 
-# For example, here's a function one to get you started
+# For example, here's a function to get you started
+# on obtaining the members data from the ProPublica API
 def get_members_data(api_key):
     """
     Get the members data using requests library
