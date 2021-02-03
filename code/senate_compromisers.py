@@ -1,6 +1,6 @@
 """
-A script to find senators most likely to break
-ranks on impeachment votes.
+A script to find senators most likely to
+compromise with the opposing party.
 
 We use the ProPublica Congress Members API
 to find senators most likely to vote
@@ -11,7 +11,7 @@ USAGE:
 
 From the command-line:
 
-    python senate_rank_breakers.py
+    python senate_compromisers.py
 
 OUTPUT:
 
@@ -57,7 +57,7 @@ def get_members_data(api_key):
     headers = {'X-API-Key': api_key }
 
     # The URL for the Members endpoint
-    url = "https://api.propublica.org/congress/v1/116/senate/members.json"
+    url = "https://api.propublica.org/congress/v1/117/senate/members.json"
 
     # TODO: Use requests to call the API
     # This is a bit more involved than our usual requests.get call.
