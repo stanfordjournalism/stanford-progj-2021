@@ -1,5 +1,7 @@
 For this exercise, let's create our own basic [Quakebot][].
 
+## Preliminary study
+
 You'll need a combination of skills to complete this exercise:
 
 * How to [request remote data](/docs/python/remote_files.md) using the `requests` library
@@ -8,6 +10,8 @@ You'll need a combination of skills to complete this exercise:
 * An understanding of how to [work with JSON data](https://realpython.com/python-json/)
 * How to create a story template using "f-strings" or other [string
   templating support in Python](https://data-driven.news/bna/2019/day/7/#mad-libs-with-strings-and-templates)
+
+## Coding
 
 The task is to write a script that ingests the "All earthquakes" feed for
 the past hour from the [USGS][]:
@@ -31,12 +35,9 @@ There were 6 earthquakes in the last hour:
 
 ## Converting the quake timestamp
 
-The USGS provides the time of quakes in what's known as epoch time. The
-time is actually in milliseconds since the year 1975, a common
-convention for storing timestamps.
-
-Investigate the `utcfromtimestamp` method in the datetime module to
-convert the time.
+The USGS provides the time of quakes in what's known as [epoch time](https://en.wikipedia.org/wiki/Epoch_(computing)), typically
+the number of *seconds* since the beginning of the year 1970. The USGS time is actually in milliseconds since 1970, so you'll need to 
+divide the time by 1000 and then investigate the [utcfromtimestamp](https://docs.python.org/3/library/datetime.html#datetime.datetime.utcfromtimestamp) method in the datetime module to convert the time.
 
 
 [USGS]: https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
