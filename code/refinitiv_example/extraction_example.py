@@ -10,7 +10,7 @@ import requests
 
 
 CALAIS_URL = 'https://api-eit.refinitiv.com/permid/calais'
-# BELOW VARIABLE MUST BE SET IN ~/.bash_profile
+# BELOW VARIABLE MUST BE SET IN ~/.bash_profile (Mac) or ~/.bashrc (Linux)
 API_KEY = os.environ['OPENCALAIS_API_KEY']
 
 EXAMPLE_TEXT= """
