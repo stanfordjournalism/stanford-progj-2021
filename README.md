@@ -79,3 +79,21 @@ No class.
 * [The Art of Writing Functions](/docs/python/art_of_functions.md)
 * **[Assignment 4](assignments/python_functions_sorting_web_basics.md)** - Study Python functions, sorting and web basics
 * **[Assignment 5](assignments/senate_compromisers.md)** - Senate compromisers Python script
+
+### Week 5
+
+#### Day 9 - Web scraping for the news
+
+* [Web scraping for the news](/docs/web_scraping/README.md) - a high-level overview of web scraping in a news context.
+* [Web scraping 101](/docs/web_scraping/101.md) - how to dissect a website, various obstacles to scraping and strategies for overcoming them
+* [Web scraping exercises](/docs/web_scraping/exercises.md) - some websites to challenge your newfound scraping skills
+* [Web scraping resources](/docs/web_scraping/resources.md) - tutorials, etc.
+* **[Assignment 8](assignments/8.md)** - Web Scraping Ramp-up
+
+
+#### Day 10 - API Services and Data Pipelines with Modules
+
+* [API Services](/docs/api_services.md)
+* [OpenCalais Entity Extraction](/code/calais_example/README.md)
+* [Data Pipelines with Modules](/docs/python/data_pipelines_with_modules.md)
+* **[Project: FDA Recall Entities](/projects/fda_recall_entities.md)** - Scrape FDA recalls and extract entities using OpenCalais API
