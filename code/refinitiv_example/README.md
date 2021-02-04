@@ -24,32 +24,30 @@ Before using this code, you must [register for a Refinitiv account][]. Be sure t
 
 After completing the registration form, you should receive a verification email. Click the provided link.
 
-At this point, Refinitiv will send you *yet another* email directing you to set up a site password for your new account.
-
 > NOTE: Refinivit warns it can take up to 24 hours for review and approval of the registration. In practice, it usually takes about 5-10 minutes.
 
-Once you received the password setup email, follow the instructions to finish creating your login credentials. 
+Once you complete the above step, Refinitiv will send *yet another* email directing you to set up a password for your new account.
 
-Now, using the Refinitiv credentials (email and password), sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
+Once you receive the password setup email, follow the instructions to finish creating your login credentials. You'll be directed to login to the new site. It's fine to log in, but to complete the process of getting an API key, we'll have to go to a different site.
 
-Alternatively, once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button (shown below).
+Using the Refinitiv credentials you just created (email and password), sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
 
-![Locate Refinitiv API Key](../../static/opencalais_get_api_key.png)
+Alternatively, once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button.
 
-Copy the long string of characters next to `Your Key`.
+Copy the long string of characters, which we'll use in the next step.
 
 ## Create environment variable
 
-Next, create the below shell environment variable by [exporting it][] in `~/.bash_profile` and *substituting your API key*:
+Next, create the below shell environment variable by [exporting it][] in `~/.bash_profile` and *substituting your API key*. Linux users should add the export to to `~/.bashrc`.
 
-> **Linux users should add the export to to `~/.bashrc`**
+> If you need help opening hidden "dot" files on a Mac, see [here](/docs/tech_faq.md#how-do-i-edit-hidden-files-on-a-mac).
 
 ```
-# ~/.bash_profile
+# ~/.bash_profile (Mac) or ~/.bashrc (Linux)
 export OPENCALAIS_API_KEY="YOUR_API_KEY"
 ```
 
-You can now look up the API key in Python code using `os.environ['OPENCALAIS_API_KEY']`, as demonstrated in this [example script](calais_example.py).
+You can now look up the API key in Python code using `os.environ['OPENCALAIS_API_KEY']`, as demonstrated in this [example script](extraction_example.py).
 
 ## Additional Resources
 
@@ -62,5 +60,5 @@ You can now look up the API key in Python code using `os.environ['OPENCALAIS_API
 [exporting it]: /docs/python/using_env_vars_for_secrets.md
 [Refinitiv Demo]: https://permid.org/onecalaisViewer
 [recall announcement]: https://www.fda.gov/MedicalDevices/Safety/ListofRecalls/ucm630614.htm
-[register for a Refinitiv account]: https://developers.refinitiv.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api
+[register for a Refinitiv account]: https://developers.refinitiv.com/en/register
 [A Practical Approach to Understanding and Ingesting Intelligent Tagging Output for Your Use Case]:  https://developers.refinitiv.com/en/article-catalog/article/a-practical-approach-to-understanding-and-ingesting-intelligent-tagging-output
