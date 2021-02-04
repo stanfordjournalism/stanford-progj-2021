@@ -28,11 +28,11 @@ After completing the registration form, you should receive a verification email.
 
 Once you complete the above step, Refinitiv will send *yet another* email directing you to set up a password for your new account.
 
-Once you receive the password setup email, follow the instructions to finish creating your login credentials. You'll be directed to login to the new site. It's fine to log in, but to complete the process of getting an API key, we'll have to go to a different site.
+Once you receive the password setup email, follow the instructions to finish creating your login credentials. You'll be directed to log in to the new site. It's fine to log in, but to complete the process of getting an API key, we'll have to go to one last site (I know, bear with us).
 
-Using the Refinitiv credentials you just created (email and password), sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
+Using the Refinitiv account credentials you just created (email and password), sign up for an API key by logging in to your new account at <https://permid.org/>. You may receive some prompts about how the login process has changed. Just click "login" when prompted. You should be redirected to your new Refinitiv/PermID home page. 
 
-Alternatively, once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button.
+The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key. Alternatively, once logged in to the site, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button.
 
 Copy the long string of characters, which we'll use in the next step.
 
