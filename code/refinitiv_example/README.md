@@ -14,11 +14,23 @@ The [Python script in this directory](extraction_example.py) demonstrates how to
 
 ## Obtain an API Key
 
-Before using this code, you must [register for a Refinitiv account][].
+> Fair warning, the process to obtain an API key is a bit convoluted. Please reach out if you get stuck or have questions.
 
-> **NOTE:** Do this right away, as the process can take up to 24 hours for review and approval.
+Before using this code, you must [register for a Refinitiv account][]. Be sure to:
 
-Once you've received confirmation for your Refinitiv account, you can sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
+* Fill in all of the fields, including title
+* Place a `+` in front of the phone number, and don't use dashes
+* Click the Terms and Conditions, do **not** manually check the box.
+
+After completing the registration form, you should receive a verification email. Click the provided link.
+
+At this point, Refinitiv will send you *yet another* email directing you to set up a site password for your new account.
+
+> NOTE: Refinivit warns it can take up to 24 hours for review and approval of the registration. In practice, it usually takes about 5-10 minutes.
+
+Once you received the password setup email, follow the instructions to finish creating your login credentials. 
+
+Now, using the Refinitiv credentials (email and password), sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
 
 Alternatively, once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button (shown below).
 
