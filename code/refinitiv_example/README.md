@@ -7,18 +7,20 @@
 
 ## Overview
 
-> Note, the Refinitiv API, by Thompson Reuters, was formerly known as OpenCalais.
+> Note, the Refinitiv API, by Thomson Reuters, was formerly known as OpenCalais.
 
 The [Python script in this directory](extraction_example.py) demonstrates how to call the [Refinitiv API][] to perform [entity extraction][]. The example uses a paragraph of text from an FDA medical device [recall announcement][].
 
 
 ## Obtain an API Key
 
-Before using this code, you must [register for an API key][]. 
+Before using this code, you must [register for a Refinitiv account][].
 
-Once you've registered for an API key, log in to your new Reuters/Refinitiv account at <https://permid.org/>.
+> **NOTE:** Do this right away, as the process can take up to 24 hours for review and approval.
 
-Once you're logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big green "Display my API token" button (shown below).
+Once you've received confirmation for your Refinitiv account, you can sign up for an API key by logging in to your new account at <https://permid.org/>.
+
+Once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big green "Display my API token" button (shown below).
 
 ![Locate Refinitiv API Key](../../static/opencalais_get_api_key.png)
 
@@ -48,5 +50,5 @@ You can now look up the API key in Python code using `os.environ['OPENCALAIS_API
 [exporting it]: /docs/python/using_env_vars_for_secrets.md
 [Refinitiv Demo]: https://permid.org/onecalaisViewer
 [recall announcement]: https://www.fda.gov/MedicalDevices/Safety/ListofRecalls/ucm630614.htm
-[register for an API key]: https://developers.refinitiv.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api
+[register for a Refinitiv account]: https://developers.refinitiv.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api
 [A Practical Approach to Understanding and Ingesting Intelligent Tagging Output for Your Use Case]:  https://developers.refinitiv.com/en/article-catalog/article/a-practical-approach-to-understanding-and-ingesting-intelligent-tagging-output
