@@ -2,7 +2,7 @@
 Example Python script showing how to call the
 OpenCalais Intelligent Tagging API.
 
-See readme.md alongside this script for more details.
+See README.md alongside this script for more details.
 """
 import os
 import json
