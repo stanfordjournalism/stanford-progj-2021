@@ -24,7 +24,7 @@ Before using this code, you must [register for a Refinitiv account][]. Be sure t
 
 After completing the registration form, you should receive a verification email. Click the provided link.
 
-> NOTE: Refinivit warns it can take up to 24 hours for review and approval of the registration. In practice, it usually takes about 5-10 minutes.
+> NOTE: Refinitiv warns it can take up to 24 hours for review and approval of the registration. In practice, it usually takes about 5-10 minutes.
 
 Once you complete the above step, Refinitiv will send *yet another* email directing you to set up a password for your new account.
 
