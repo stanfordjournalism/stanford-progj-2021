@@ -18,9 +18,9 @@ Before using this code, you must [register for a Refinitiv account][].
 
 > **NOTE:** Do this right away, as the process can take up to 24 hours for review and approval.
 
-Once you've received confirmation for your Refinitiv account, you can sign up for an API key by logging in to your new account at <https://permid.org/>.
+Once you've received confirmation for your Refinitiv account, you can sign up for an API key by logging in to your new account at <https://permid.org/>. The process of logging in to permid.org for the first time (using your Refinitiv credentials) should trigger an email containing your API key.
 
-Once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big green "Display my API token" button (shown below).
+Alternatively, once logged in, you can obtain your API key by clicking on the "APIs" link in the upper right. Then click on the big orange "Display my API token" button (shown below).
 
 ![Locate Refinitiv API Key](../../static/opencalais_get_api_key.png)
 
