@@ -43,10 +43,10 @@ You can now look up the API key in Python code using `os.environ['OPENCALAIS_API
 * [A Practical Approach to Understanding and Ingesting Intelligent Tagging Output for Your Use Case][]
 
 
-[Refinitiv API]: https://developers.refinitiv.com/open-permid/intelligent-tagging-restful-api
+[Refinitiv API]: https://developers.refinitiv.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api
 [entity extraction]: https://en.wikipedia.org/wiki/Named-entity_recognition
-[exporting it]: ../../docs/python/using_env_vars_for_secrets.md
+[exporting it]: /docs/python/using_env_vars_for_secrets.md
 [Refinitiv Demo]: https://permid.org/onecalaisViewer
 [recall announcement]: https://www.fda.gov/MedicalDevices/Safety/ListofRecalls/ucm630614.htm
-[register for an API key]: https://iamui.thomsonreuters.com/iamui/UI/createUser?app_id=Bold&realm=Bold&realm=Bold
+[register for an API key]: https://developers.refinitiv.com/en/api-catalog/open-perm-id/intelligent-tagging-restful-api
 [A Practical Approach to Understanding and Ingesting Intelligent Tagging Output for Your Use Case]:  https://developers.refinitiv.com/en/article-catalog/article/a-practical-approach-to-understanding-and-ingesting-intelligent-tagging-output
