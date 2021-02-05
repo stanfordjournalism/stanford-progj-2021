@@ -7,21 +7,21 @@
 
 ## Overview
 
-This project ties together [web scraping](../docs/web_scraping/README.md), an [API service](../docs/api_services.md), and basic data wrangling skills.
+This project ties together [web scraping](/docs/web_scraping/README.md), an [API service](/docs/api_services.md), and basic data wrangling skills.
 
-It requires creating a multi-step [data pipeline](../docs/python/data_pipelines_with_modules.md) that performs the below steps:
+It requires creating a multi-step [data pipeline](/docs/python/data_pipelines_with_modules.md) that performs the below steps:
 
 * Scrapes FDA recall announcements
 * Performs entity extraction on specific text from each recall announcement using the [OpenCalais/Refinitiv Intelligent Tagging API](https://developers.refinitiv.com/open-permid/intelligent-tagging-restful-api)
 * Generates a CSV listing extracted entities
 
-Each of these steps must be encapsulated in [a module that can be executed individually as a script](../docs/python/data_pipelines_with_modules.md#modules-as-scripts).
+Each of these steps must be encapsulated in [a module that can be executed individually as a script](/docs/python/data_pipelines_with_modules.md#modules-as-scripts).
 
 You must also create a single script that orchestrates all of the steps of the pipeline at once. See below for more details on each script.
 
 ## Setup
 
-Create a new [DataKit](../docs/datakit.md) project, choosing `project` when prompted (rather than assignment) and give it a short name of `FDA Recalls`. 
+Create a new [DataKit](/docs/datakit.md) project and, when prompted, name it `FDA Recalls`. This should produce a local git repo/folder and GitHub project called `fda-recalls`.
 
 ```
 cd ~/Desktop/code
@@ -31,17 +31,18 @@ datakit project create
 For this project, you'll need the requests and bs4 libraries.
 
 ```
-cd comm-177p-project-fda-recalls
+cd fda-recalls/
 pipenv install requests bs4
 ```
 
 Next, create the following Python modules in your `scripts/` directory.
 
 ```
-fda.py
-opencalais.py
-report.py
-run_pipeline.py
+cd scripts/
+touch fda.py
+touch entities.py
+touch report.py
+touch run_pipeline.py
 ```
 
 ## Code Details
@@ -52,13 +53,13 @@ Each of the modules below should be created in a way that allows them to be opti
 
 ### fda.py
 
-`fda.py` should scrape the links to [2020 medical device recall announcements](https://www.fda.gov/medical-devices/medical-device-recalls/2020-medical-device-recalls) and then request and save the raw HTML for each of those "detail" pages to the `data/raw/` directory inside of your project.
+`fda.py` should scrape the links to [2021 medical device recall announcements](https://www.fda.gov/medical-devices/medical-device-recalls/2021-medical-device-recalls) and then request and save the raw HTML for each of those "detail" pages to the `data/raw/` directory inside of your project.
 
 The files must be named using the last portion of their URL + the `.html` suffix. For example, this url:
 
 	https://www.fda.gov/medical-devices/medical-device-recalls/ge-healthcare-recalls-carescape-respiratory-modules-due-incorrect-oxygen-values
 
-...should be save here:
+...should be saved here:
 
 	data/raw/ge-healthcare-recalls-carescape-respiratory-modules-due-incorrect-oxygen-values.html
 
@@ -68,17 +69,17 @@ Lastly, you must include the `if __name__ == '__main__':` strategy in the module
 
 
 
-### opencalais.py
+### entities.py
 
-`opencalais.py` should use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse and extract the first paragraph in the *"Reason for Recall"* section of each recall page (the HTML downloaded by `fda.py`). 
+`entities.py` should use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse and extract the first paragraph in the *"Reason for Recall"* section of each recall page (the HTML downloaded by `fda.py`). 
 
-Once the text is extracted, it should send the paragraph to the OpenCalais API for entity extraction.
+Once the text is extracted, it should send the paragraph to the OpenCalais/Refinitiv API for entity extraction.
 
-For this step, you *must* [obtain an API key](../code/calais_example/README.md#obtain-an-api-key) and then create an environment variable called `OPENCALAIS_API_KEY`. This allows you to avoid hard-coding your key in the script.
+For this step, you *must* [obtain an API key](/code/refinitiv_example/README.md#obtain-an-api-key) and then create an environment variable called `OPENCALAIS_API_KEY`. This allows you to avoid hard-coding your key in the script.
 
-> **Here is [example code](../code/calais_example/README.md) demonstrating the above techniques.** Additionally, see [Using Environment Variables to Stash Secrets](../docs/python/using_env_vars_for_secrets.md).
+> **Here is [example code](/code/refinitiv_example/extraction_example.py) demonstrating the above techniques.** Additionally, see [Using Environment Variables to Stash Secrets](/docs/python/using_env_vars_for_secrets.md).
 
-The JSON returned by OpenCalais should be saved in local files alongside the original HTML files. The JSON files should be named identically, except that their file extensions should be changed from `.html` to `.json`. Here is an example:
+The JSON returned by the API should be saved in local files alongside the original HTML files. The JSON files should be named identically, except that their file extensions should be changed from `.html` to `.json`. Here is an example:
 
 ```
 data/raw/distributor-teleflex-recalls-galemed-babiplus-pressure-relief-manifolds-due-dislodged-valve.json
@@ -91,7 +92,7 @@ Lastly, you must include the `if __name__ == '__main__':` strategy in the module
 
 ### report.py
 
-`report.py` should read the JSON files downloaded by `opencalais.py` and generate a CSV called `fda_tags.csv`. This CSV must be saved at the following location in your project:
+`report.py` should read the JSON files downloaded by `entities.py` and generate a CSV called `fda_tags.csv`. This CSV must be saved at the following location in your project:
 
 ```
 data/processed/fda_tags.csv
@@ -106,8 +107,8 @@ entity,source_file
 Physical sciences, distributor-teleflex-recalls-galemed-babiplus-pressure-relief-manifolds-due-dislodged-valve.json
 ```
 
-* `Physical sciences` is extracted from the `name` field of the OpenCalais JSON data
-* The file name is simply the name of the local JSON file where the OpenCalais data is stored. 
+* `Physical sciences` is extracted from the `name` field of the JSON data
+* The file name is simply the name of the local JSON file where the API data is stored.
 
 Here's a snippet showing the relevant portion of the JSON file for a "socialTag" item:
 
@@ -154,5 +155,5 @@ As always, to complete the assignment, you must:
 * Push your code to GitHub
 * Submit a link to the GitHub project via Canvas
 
-[portable paths tutorial]: ../docs/python/portable_paths.md#environment-variables-and-pipenv
-[data pipelines with modules]: ../docs/python/data_pipelines_with_modules.md
+[portable paths tutorial]: /docs/python/portable_paths.md#environment-variables-and-pipenv
+[data pipelines with modules]: /docs/python/data_pipelines_with_modules.md
