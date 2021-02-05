@@ -88,7 +88,7 @@ No class.
 * [Web scraping 101](/docs/web_scraping/101.md) - how to dissect a website, various obstacles to scraping and strategies for overcoming them
 * [Web scraping exercises](/docs/web_scraping/exercises.md) - some websites to challenge your newfound scraping skills
 * [Web scraping resources](/docs/web_scraping/resources.md) - tutorials, etc.
-* **[Assignment 8](assignments/8.md)** - Web Scraping Ramp-up
+* **[Assignment 6](/assignments/web_scraping_ramp_up.md)** - Web Scraping Ramp-up
 
 
 #### Day 10 - API Services and Data Pipelines with Modules
@@ -96,4 +96,4 @@ No class.
 * [API Services](/docs/api_services.md)
 * [Refinitiv Entity Extraction](/code/refinitiv_example/README.md)
 * [Data Pipelines with Modules](/docs/python/data_pipelines_with_modules.md)
-* **[Project: FDA Recall Entities](/projects/fda_recall_entities.md)** - Scrape FDA recalls and extract entities using OpenCalais API
+* **[Project: FDA Recall Entities](/projects/fda_recall_entities.md)** - Scrape FDA recalls and extract entities using the OpenCalais/Refinitiv API

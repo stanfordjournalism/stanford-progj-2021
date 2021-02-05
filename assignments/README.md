@@ -10,8 +10,8 @@ Assignment|Description|Solution
 [Assignment 3][] | Practical Python skills and FDIC Python |
 [Assignment 4][] | Python functions and sorting; web basics | N/A
 [Assignment 5][] | Senate compromisers script |
-
-
+[Assignment 6][] | Web scraping ramp-up | N/A
+[Project 1][] | FDA Recall Entities |
 
 
 [Assignment 0]: bash_intro.md
@@ -20,3 +20,6 @@ Assignment|Description|Solution
 [Assignment 3]: libraries_and_fdic_py.md
 [Assignment 4]: python_functions_sorting_web_basics.md
 [Assignment 5]: senate_compromisers.md
+[Assignment 6]: web_scraping_ramp_up.md
+[Project 1]: /projects/fda_recall_entities.md
+
