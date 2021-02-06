@@ -66,9 +66,10 @@ Create a new [DataKit](../docs/datakit.md) project named `Senate Compromisers`. 
 cd ~/Desktop/code
 datakit project create
 
-# Don't forget to run pipenv install
+# Install the "requests" library
+# in the new project
 cd senate-compromisers
-pipenv install
+pipenv install requests
 ```
 
 Download the [`senate_compromisers.py`](/code/senate_compromisers.py) starter script and save it to your project's `scripts/` directory. Remember, you need to click the "Raw" button on GitHub to get access to a plain-text version of the file for download.
