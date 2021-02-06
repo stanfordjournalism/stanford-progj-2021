@@ -74,6 +74,20 @@ pipenv install requests
 
 Download the [`senate_compromisers.py`](/code/senate_compromisers.py) starter script and save it to your project's `scripts/` directory. Remember, you need to click the "Raw" button on GitHub to get access to a plain-text version of the file for download.
 
+Don't forget, when testing your script on the command line, you should always activate the virtual environment first:
+
+```
+# Activate the environment
+cd senate-compromisers/
+pipenv shell
+
+# Run the script
+cd scripts/
+python senate_compromisers.py
+```
+
+> See the docs on [installing and using libraries](/docs/python/libraries.md#installing-and-using-libraries) for additional background on the virtual environment workflow.
+
 ## Coding details
 
 Now you're ready to flesh out the script. Below are the requirements:
