@@ -38,4 +38,4 @@ common words or phrases.
 
 -  [Refinitiv/OpenCalais API](https://www.refinitiv.com/en/products/intelligent-tagging-text-analytics) with links to demo and API registration
 -  [A Practical Approach to Understanding and Ingesting Intelligent Tagging Output](https://developers.refinitiv.com/en/article-catalog/article/a-practical-approach-to-understanding-and-ingesting-intelligent-tagging-output)
--  [Refinitiv/OpenCalais API example](/code/calais_example)
+-  [Refinitiv/OpenCalais API example](/code/refinitiv_example/)
