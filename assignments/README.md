@@ -7,7 +7,7 @@ Assignment|Description|Solution
 [Assignment 0][] | Tech setup; Unix practice and play | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/blob/main/failed_banks_ca.sh)
 [Assignment 1][] | Python intro; `filtered_animals.py` | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/blob/main/filtered_animals.py)
 [Assignment 2][] | Python lists and dicts; DataKit overview | N/A
-[Assignment 3][] | Practical Python skills and FDIC Python |
+[Assignment 3][] | Practical Python skills and FDIC Python | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/tree/main/fdic_py)
 [Assignment 4][] | Python functions and sorting; web basics | N/A
 [Assignment 5][] | Senate compromisers script |
 [Assignment 6][] | Web scraping ramp-up | N/A
