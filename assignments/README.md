@@ -9,7 +9,7 @@ Assignment|Description|Solution
 [Assignment 2][] | Python lists and dicts; DataKit overview | N/A
 [Assignment 3][] | Practical Python skills and FDIC Python | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/tree/main/fdic_py)
 [Assignment 4][] | Python functions and sorting; web basics | N/A
-[Assignment 5][] | Senate compromisers script |
+[Assignment 5][] | Senate compromisers script | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/blob/main/propub_senate_api/senate_compromisers.py)
 [Assignment 6][] | Web scraping ramp-up | N/A
 [Project 1][] | FDA Recall Entities |
 
