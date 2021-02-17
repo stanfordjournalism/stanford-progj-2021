@@ -5,7 +5,7 @@ Sundry notes and code bits for Stanford's Programming in Journalism class (COMM 
 ## Important links
 
 * [Syllabus][]
-* [Assignments](assignments/README.md)
+* [Assignments](assignments/README.md) and [Grading](assignments/grading.md)
 * [Bookshelf](docs/bookshelf.md) - recommended books, tutorials, cheatsheets, etc.
 * [Code solutions](https://github.com/zstumgoren/stanford-progj-2021-solutions) - A private repo containing solutions to class exercises.
 * [Datakit](docs/datakit.md) - overview and details on install and usage
