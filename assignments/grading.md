@@ -2,7 +2,7 @@
 
 - [Overview](#overview)
 - [Point deductions](#point-deductions)
-- [Easy fix for style](#easy-fix-for-style)
+- [Pre-submission checklist](#pre-submission-checklist)
 - [How to succeed on assignments](#how-to-succeed-on-assignments)
 
 ## Overview
