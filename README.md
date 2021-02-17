@@ -97,3 +97,15 @@ No class.
 * [Refinitiv Entity Extraction](/code/refinitiv_example/README.md)
 * [Data Pipelines with Modules](/docs/python/data_pipelines_with_modules.md)
 * **[Project: FDA Recall Entities](/projects/fda_recall_entities.md)** - Scrape FDA recalls and extract entities using the OpenCalais/Refinitiv API
+
+### Week 6
+
+#### Day 11 - Prez Day
+
+No class.
+
+#### Day 12 - Code review and workshop
+
+* Review and discuss solutions to recent [assignments](assignments/README.md)
+* Strategies for gaining visibility into code while you work
+* **[Assignment 7](/assignments/dj_intro.md)** - Data Journalism intro readings

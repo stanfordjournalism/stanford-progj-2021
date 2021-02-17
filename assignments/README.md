@@ -14,6 +14,8 @@ Assignment|Description|Solution
 [Assignment 5][] | Senate compromisers script | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/blob/main/propub_senate_api/senate_compromisers.py)
 [Assignment 6][] | Web scraping ramp-up | N/A
 [Project 1][] | FDA Recall Entities |
+[Assignment 7][] | Data Journalism intro | N/A
+
 
 
 [Assignment 0]: bash_intro.md
@@ -23,5 +25,7 @@ Assignment|Description|Solution
 [Assignment 4]: python_functions_sorting_web_basics.md
 [Assignment 5]: senate_compromisers.md
 [Assignment 6]: web_scraping_ramp_up.md
+[Assignment 7]: dj_intro.md
+
 [Project 1]: /projects/fda_recall_entities.md
 
