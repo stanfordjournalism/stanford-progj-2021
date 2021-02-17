@@ -24,16 +24,16 @@ Below are some common ways to lose points on technical assignments:
   * Not naming files or projects correctly
   * Not creating functions when asked to do so
 * Not installing dependencies such as `requests`
-* "Installing" dependencies that are built into Python (e.g. 'csv' or 'datetime' should *not* appear in Pipfile)
+* "Installing" dependencies that are built into Python (e.g. `csv` or `datetime` should *not* appear in Pipfile)
 * Broken/incomplete code
 * Incorrect output or results from a script or analysis
-* Unnecessarily complex code. For exampple:
+* Unnecessarily complex code. For example:
   * Duplicative functions that could easily be simplified into a single function
   * Use of `range` in looping when a simple `for <variable> in <iterable>` suffices
 * Messy or hard-to-read code:
   * Unused variables
   * Single-letter variables
-  * Poorly named functions (e.g. don't do what their name implies) 
+  * Poorly named functions (e.g. don't do what their names imply) 
   * Extraneous print statements (i.e. those used for debugging but not needed for final results)
 * Not following style/syntax conventions:
   * Non-standard indentation (8 instead of 4 spaces in Python)
