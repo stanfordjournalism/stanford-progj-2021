@@ -92,6 +92,8 @@ Lastly, you must include the `if __name__ == '__main__':` strategy in the module
 
 ### report.py
 
+> For this section, you'll need to use the built-in [json](https://realpython.com/python-json/) module to read the JSON you saved in the `entities.py` script.
+
 `report.py` should read the JSON files downloaded by `entities.py` and generate a CSV called `fda_tags.csv`. This CSV must be saved at the following location in your project:
 
 ```
