@@ -27,7 +27,7 @@ Assignment|Description|Solution
 [Assignment 5]: senate_compromisers.md
 [Assignment 6]: web_scraping_ramp_up.md
 [Assignment 7]: dj_intro.md
-[Assignment 8]: final_project_question.md
+[Assignment 8]: final_project_story_idea.md
 
 [Project 1]: /projects/fda_recall_entities.md
 [Project 2]: /projects/sf_data_analysis.md
