@@ -6,7 +6,7 @@
 
 ## Craft and present story ideas
 
-The second half of our class will focus on data wrangling and analysis with Python, culminating in a [final project](/projects/sf_data_analysis.md) presentation in Week 10.
+The second half of our course will focus on data wrangling and analysis with Python, culminating in a [final project](/projects/sf_data_analysis.md) presentation in Week 10.
 
 The first step in that process involves identifying a story idea built around one or more *quantifiable* questions. These are questions that measure and/or compare things:
 
