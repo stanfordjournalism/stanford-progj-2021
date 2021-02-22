@@ -62,7 +62,7 @@ It demonstrates the expected style, format and content of this assignment and co
 
 Below are resources that are also worth reviewing:
 
-- [Analyzing AZ Traffic Stops](https://github.com/newshackaz/az_stops/blob/master/completed_analysis.ipynb) offers a solid walk-through of the process of data quality assessment, analysis and viz
+- [Analyzing AZ Traffic Stops](https://nbviewer.jupyter.org/github/newshackaz/az_stops/blob/master/completed_analysis.ipynb) offers a solid walk-through of the process of data quality assessment, analysis and viz
 - [LAT DataDesk Notebooks](https://github.com/datadesk/notebooks) - many great examples of notebook analysis
 
 The Jupyter notebook you create for this assignment must blend narrative explanation with code. It must contain the following elements:
