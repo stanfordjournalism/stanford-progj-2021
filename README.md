@@ -109,3 +109,22 @@ No class.
 * Review and discuss solutions to recent [assignments](assignments/README.md)
 * Strategies for gaining visibility into code while you work
 * **[Assignment 7](/assignments/dj_intro.md)** - Data Journalism intro readings
+
+
+### Week 7
+
+#### Day 13 - Data Journalism Overview and Final Project Preview
+
+* [Data Journalism - A Very Brief Tour](https://docs.google.com/presentation/d/1OPVDw_5toenId-RehkBwuvvV5lJMrHb7579U4Uj1eCg/edit?usp=sharing)
+* Data Journalism in the wild - Dilcia Mercedes and Justin Mayo
+* [Whirlwind Tour of the Data Journalism Process](https://docs.google.com/presentation/d/1cEoPLJpZ6FVNLtW5f3jtWhgEeIhPv6eqWae85LAFPcs/edit?usp=sharing)
+* Preview of **[Final Project - SF Data Analysis](projects/sf_data_analysis.md)** and begin working on story ideas and data sleuthing/vetting.
+* **[Assignment 8](/assignments/final_project_question.md)** - Prepare and present final project story ideas
+
+#### Day 14 - Intro to Jupyter
+
+* [Data Analysis with Jupyter and pandas](/docs/python/data_analysis_intro.md)
+
+
+
+

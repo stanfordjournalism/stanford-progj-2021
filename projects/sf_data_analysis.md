@@ -13,9 +13,9 @@
 
 For this project, you will [develop a news story idea](#develop-a-story-idea) and execute a related Jupyter Notebook analysis using data from the San Francisco open data portal: [DataSF.org][].
 
-The story idea and analysis can be developed individually or as a group (no more than 4 people per group). Each group will be responsible for presenting a completed analysis during the final week of class.
+The story idea and analysis can be developed individually or with one other person in class. Each group will be responsible for presenting a completed analysis during the final week of class.
 
-We encourage group collaboration, but note that each student in a group must submit her/his own copy of the Jupyter notebook. One group member should take lead on the presentation, but all group members should be prepared to answer questions about the project.
+We encourage pairing up with a classmate, but note that each student in on a team must submit her/his own copy of the Jupyter notebook. One group member should take lead on the presentation, but both should be prepared to answer questions about the project.
 
 [DataSF.org]: https://datasf.org/
 
@@ -39,9 +39,9 @@ This project requires locating a data set that can help explore a clearly articu
 
 The best story ideas often originate on beats, so we encourage you to find data that helps explore your own pre-existing ideas. The only requirement is that you must use one (or more) data sets from [DataSF.org][].
 
-If you're hard-pressed to come up with a story idea, it's fine to explore [DataSF.org][], individually or as a group, to pinpoint data sets of potential interest. 
+If you're hard-pressed to come up with a story idea, it's fine to explore [DataSF.org][] to pinpoint data sets of potential interest.
 
-Don't worry if the news or acedemia have already covered a story idea. For this project, we're less focused on breaking original ground than on formulating a question and executing a news analysis to explore that question. 
+Don't worry if the news or academia have already covered a story idea. For this project, we're less focused on breaking original ground than on formulating a question and executing a news analysis to explore that question. 
 
 Previous reporting is a great source of inspiration, and it's fine to build on ground tread by others.
 
@@ -54,7 +54,13 @@ If you can't find a story idea/data of your own, here are a few suggestions that
 
 ## Notebook details
 
-Before starting this assignment, please carefully review this [example Jupyter notebook](../code/sfgov/sfpd-incidents.ipynb). It demonstrates the expected style, format and content of this assignment and contains a sprinkling of advice on working with data and technical tips.  Below are resources that are also worth reviewing:
+Before starting this assignment, please carefully review this [example Jupyter notebook].
+
+[example Jupyter notebook]: https://nbviewer.jupyter.org/github/stanfordjournalism/stanford-progj-2021/blob/main/code/sfgov/sfpd-incidents.ipynb
+
+It demonstrates the expected style, format and content of this assignment and contains a sprinkling of advice on working with data and technical tips. The notebook itself can be downloaded [here](/code/sfgov/sfpd-incidents.ipynb).
+
+Below are resources that are also worth reviewing:
 
 - [Analyzing AZ Traffic Stops](https://github.com/newshackaz/az_stops/blob/master/completed_analysis.ipynb) offers a solid walk-through of the process of data quality assessment, analysis and viz
 - [LAT DataDesk Notebooks](https://github.com/datadesk/notebooks) - many great examples of notebook analysis
@@ -75,15 +81,17 @@ The Jupyter notebook you create for this assignment must blend narrative explana
 
 ### Generate an idea
 
-Form into groups of up to 4 students (it's also fine to work individually).
+Form a team with one classmate (it's also fine to work individually).
 
-As a group, discuss and identify a **well-formed** [story question](#develop-a-story-idea) that can be explored using data from [DataSF.org][]. Remember, a well-focused question is **quantifiable.**
+As a team, discuss and identify a **well-formed** [story question](#develop-a-story-idea) that can be explored using data from [DataSF.org][]. Remember, a well-focused question is **quantifiable.** 
+
+As part of the process, you will need to identify one or more data sets that could be used to help explore your story question. This should include a review of the data itself to identify which fields would allow you to explore the given question.
 
 ### Assess and plan
 
 The goals for this phase are to:
 
-* Identify and assess the usability of the overall data set and key data fields, i.e. fields from the data set identified in [Phase 0](#phase-0) that will help address the story question.
+* Identify and assess the usability of the overall data set and key data fields, i.e. fields from the data set identified that will help address the story question.
 * Get a rough sense of any potential technical roadblocks.
 * Lay out a plan of attack for the analysis/visualization.
 
@@ -109,7 +117,7 @@ For example, you may need to join your data to a [map of San Francisco neighborh
 
 ### Present story idea
 
-Each group will give a roughly 5 minute presentation on their story idea, the data set(s) they picked, and their plan of attack for executing the project. This is an opportunity to get constructive feedback from classmates and instructors. Be sure to mention potential technical challenges, additional data sets you're trying to hunt down, etc.
+Each team will give a roughly 5 minute presentation on their story idea, the data set(s) they picked, and their plan of attack for executing the project. This is an opportunity to get constructive feedback from classmates and instructors. Be sure to mention potential technical challenges, additional data sets you're trying to hunt down, etc.
 
 ### Perform analysis
 
@@ -138,24 +146,12 @@ Group members should all be prepared to answer questions.
 
 ## Code setup
 
-Create a [DataKit](../docs/datakit.md) project called `sf-data-project`:
+Create a [DataKit](/docs/datakit.md) project called `sf-data-project`:
 
 ```
 cd ~/Desktop/code
 $ datakit project create
-Creating project from template: /Users/tumgoren/.cookiecutters/cookiecutter-stanford-progj
-Select repo_type:
-1 - Assignment
-2 - Exercise
-3 - Project
-Choose from 1, 2, 3 (1, 2, 3) [1]: 3
-project_number_or_shortname []: SF Data Project
-project_name [COMM 177P Project SF Data Project]: SF Data Project
-project_short_description [TK]: SF Data Project
-repo_root [sf-data-project]:
-
-etc. 
-etc.
+# Name the project SF Data Project
 ```
 
 As always, be sure to install dependencies, then save and push your code to GitHub:
@@ -165,6 +161,9 @@ As always, be sure to install dependencies, then save and push your code to GitH
 cd sf-data-project
 pipenv install
 
+# You'll also need Pandas and, likely, altair
+pipenv install pandas altair
+
 # Activate virtual env and push code
 pipenv shell
 invoke code.push
@@ -172,19 +171,19 @@ invoke code.push
 
 ## Reference materials
 
-Check out the [pandas](../docs/python/data_analysis_intro.md#pandas) and [First Python Notebook](../docs/python/data_analysis_intro.md#first-python-notebook) sections of our [data analysis intro](../docs/python/data_analysis_intro.md) class notes for links to documentation, tutorials and cheatsheets than can help along the way (I find it's especially helpful to keep a cheatsheet handy when working with *pandas*).
+Check out the [pandas](/docs/python/data_analysis_intro.md#pandas) and [First Python Notebook](/docs/python/data_analysis_intro.md#first-python-notebook) sections of our [data analysis intro](/docs/python/data_analysis_intro.md) class notes for links to documentation, tutorials and cheatsheets than can help along the way (I find it's especially helpful to keep a cheatsheet handy when working with *pandas*).
 
 
 ## Submission
 
 As always, submission is a two-step process.
 
-
 1. Push your code to GitHub
-```
-cd ~/Desktop/code/sf-data-project
-pipenv shell
-invoke code.push
-```
+
+  ```
+   cd ~/Desktop/code/sf-data-project
+   pipenv shell
+  invoke code.push
+  ```
 
 1. Submit the GitHub URL for your project via Canvas.
