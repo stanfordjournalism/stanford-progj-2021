@@ -2,6 +2,7 @@
 
 - [Jupyter Notebooks](#jupyter-notebooks)
 - [Jupyter use cases](#jupyter-use-cases)
+- [Narrative with Markdown](#narrative-with-markdown)
 - [pandas](#pandas)
 - [First Python Notebook](#first-python-notebook)
 
@@ -38,6 +39,10 @@ It's worth noting that it *is* possible to run heavy web scrapes in a Jupyter no
 
 For this course, however, we'll decouple "expensive" data acquisition steps from Jupyter in order to keep notebooks light-weight and focused on data wrangling and analysis.
 
+## Narrative with Markdown
+
+Here's a [basic guide](https://www.markdownguide.org/basic-syntax) to getting started with Markdown, a simple language for generating formatted text.
+
 ## pandas
 
 The [pandas][] library is the workhorse of data wrangling and analysis in Python. It provides a wide range of functionality for common data tasks such as filtering, joining, and aggregating data.
@@ -63,7 +68,7 @@ Below are links to key sections in case you've moved on to your own project and 
 
   - [Reading data](http://www.firstpythonnotebook.org/dataframe/index.html#creating-a-dataframe)
   - [DataFrame helpers](http://www.firstpythonnotebook.org/dataframe/index.html) (head, info, etc.)
-  - [Columns](http://www.firstpythonnotebook.org/value_counts/index.html#)
+  - [Columns](http://www.firstpythonnotebook.org/value_counts/index.html)
   - [Filtering](http://www.firstpythonnotebook.org/filter/index.html)
   - [Merging](http://www.firstpythonnotebook.org/merge/index.html)
   -  [Summing](http://www.firstpythonnotebook.org/totals/index.html) and [descriptive
@@ -72,8 +77,6 @@ Below are links to key sections in case you've moved on to your own project and 
   - [Sorting](http://www.firstpythonnotebook.org/sort_values/index.html)
   - [Groupby](http://www.firstpythonnotebook.org/groupby/index.html)
   - [Charts](http://www.firstpythonnotebook.org/charts/index.html)
-  - [Narrative](http://www.firstpythonnotebook.org/markdown/index.html)
-    (markdown)
 
 
 [pandas]: https://pandas.pydata.org/pandas-docs/stable/user_guide/index.html#user-guide
