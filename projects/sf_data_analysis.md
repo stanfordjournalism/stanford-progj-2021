@@ -161,8 +161,8 @@ As always, be sure to install dependencies, then save and push your code to GitH
 cd sf-data-project
 pipenv install
 
-# You'll also need Pandas and, likely, altair
-pipenv install pandas altair
+# You'll also need jupyter, pandas and, likely, altair
+pipenv install jupyter pandas altair
 
 # Activate virtual env and push code
 pipenv shell
