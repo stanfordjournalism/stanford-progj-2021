@@ -16,7 +16,8 @@ Assignment|Description|Solution
 **[Project 1][]** | FDA Recall Entities |
 [Assignment 7][] | Data Journalism intro | N/A
 [Assignment 8][] | Final project story presentation | N/A
-**[Project 2][]** | Final Project - SF Data Analysis | N/A
+[Assignment 9][] | First Python Notebook | N/A
+**[Project 2][]** | Final Data Project | N/A
 
 
 [Assignment 0]: bash_intro.md
@@ -28,6 +29,7 @@ Assignment|Description|Solution
 [Assignment 6]: web_scraping_ramp_up.md
 [Assignment 7]: dj_intro.md
 [Assignment 8]: final_project_story_idea.md
+[Assignment 9]: first_notebook.md
 
 [Project 1]: /projects/fda_recall_entities.md
 [Project 2]: /projects/sf_data_analysis.md

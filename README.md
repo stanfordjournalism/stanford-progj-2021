@@ -117,13 +117,15 @@ No class.
 
 * [Data Journalism - A Very Brief Tour](https://docs.google.com/presentation/d/1OPVDw_5toenId-RehkBwuvvV5lJMrHb7579U4Uj1eCg/edit?usp=sharing)
 * Data Journalism in the wild - Dilcia Mercedes and Justin Mayo
-* [Whirlwind Tour of the Data Journalism Process](https://docs.google.com/presentation/d/1cEoPLJpZ6FVNLtW5f3jtWhgEeIhPv6eqWae85LAFPcs/edit?usp=sharing)
 * Preview of **[Final Project - SF Data Analysis](projects/sf_data_analysis.md)** and begin working on story ideas and data sleuthing/vetting.
 * **[Assignment 8](/assignments/final_project_story_idea.md)** - Prepare and present final project story ideas
 
-#### Day 14 - Intro to Jupyter
+#### Day 14 - The DJ Process and Intro to Data Analysis
 
+* [Whirlwind Tour of the Data Journalism Process](https://docs.google.com/presentation/d/1cEoPLJpZ6FVNLtW5f3jtWhgEeIhPv6eqWae85LAFPcs/edit?usp=sharing)
 * [Data Analysis with Jupyter and pandas](/docs/python/data_analysis_intro.md)
+* **[Assignment 9](/assignments/first_notebook.md)** - First Python Notebook
+
 
 
 
