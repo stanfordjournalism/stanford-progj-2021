@@ -53,7 +53,7 @@ Below are a few resources that can help level up on [pandas][]:
 
 - [First Python Notebook](#first-python-notebook)
 - [Kaggle pandas tutorial](https://www.kaggle.com/learn/pandas)
-- [10 Minutes to pandas](http://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)
+- [10 Minutes to pandas](https://pandas.pydata.org/docs/user_guide/10min.html)
 - Pandas cheat sheets (print these\! They're awesome\!)
    -  [basics cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf)
     -  [data wrangling](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
