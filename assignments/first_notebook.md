@@ -1,6 +1,7 @@
 # First Python Notebook
 
 - [Overview](#overview)
+- [Important notes](#important-notes)
 - [Setup](#setup)
 - [Starting Jupyter Lab](#starting-jupyter-lab)
 - [Submissions](#submissions)
@@ -17,7 +18,21 @@ Please carefully work through the [Setup](#setup) instructions below, and then f
 
 **Work through all the sections starting from [Chapter 2: Hello Notebook](https://www.firstpythonnotebook.org/notebook/index.html).**
 
-Note that [Chapter 12: Hello remix](https://www.firstpythonnotebook.org/remix/index.html) is a slight detour that demonstrates how to repurpose the analysis code for other California propositions. It's fine to skip entering the code for this section. Or if you do enter the code, make sure to restore the original propisition to complete the analysis in [Chapter 13: Hello charts](https://www.firstpythonnotebook.org/charts/index.html).
+## Important notes
+
+If you get an error reading the [committees][] and [contributions][] data, use the alternative URLs below:
+
+[committees]: https://www.firstpythonnotebook.org/dataframe/index.html#creating-a-dataframe
+[contributions]: https://www.firstpythonnotebook.org/dataframe/index.html#creating-another-dataframe
+
+```python
+committee_list = pd.read_csv("https://raw.githubusercontent.com/california-civic-data-coalition/first-python-notebook/master/docs/_static/committees.csv")
+
+contrib_list = pd.read_csv("https://raw.githubusercontent.com/california-civic-data-coalition/first-python-notebook/master/docs/_static/contributions.csv")
+
+```
+
+[Chapter 12: Hello remix](https://www.firstpythonnotebook.org/remix/index.html) is a slight detour that demonstrates how to repurpose the analysis code for other California propositions. It's fine to skip entering the code for this section. Or if you do enter the code, make sure to restore the original propisition to complete the analysis in [Chapter 13: Hello charts](https://www.firstpythonnotebook.org/charts/index.html).
 
 
 ## Setup
