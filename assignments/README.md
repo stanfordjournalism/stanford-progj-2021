@@ -13,7 +13,7 @@ Assignment|Description|Solution
 [Assignment 4][] | Python functions and sorting; web basics | N/A
 [Assignment 5][] | Senate compromisers script | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/blob/main/propub_senate_api/senate_compromisers.py)
 [Assignment 6][] | Web scraping ramp-up | N/A
-**[Project 1][]** | FDA Recall Entities |
+**[Project 1][]** | FDA Recall Entities | [:link:](https://github.com/zstumgoren/stanford-progj-2021-solutions/tree/main/fda_recall_entities)
 [Assignment 7][] | Data Journalism intro | N/A
 [Assignment 8][] | Final project story presentation | N/A
 [Assignment 9][] | First Python Notebook | N/A
