@@ -126,6 +126,16 @@ No class.
 * [Data Analysis with Jupyter and pandas](/docs/python/data_analysis_intro.md)
 * **[Assignment 9](/assignments/first_notebook.md)** - First Python Notebook
 
+### Week 8
+
+#### Day 15 - Final Project Story Idea Presentations
+
+* Present story ideas for the [final project](projects/sf_data_analysis.md) as part of [Assignment 8](/assignments/final_project_story_idea.md).
+
+#### Day 16 - Final Project Workshop
+
+* Overview of requirements for [final project](projects/sf_data_analysis.md)
+* One-on-one technical consults 
 
 
 
