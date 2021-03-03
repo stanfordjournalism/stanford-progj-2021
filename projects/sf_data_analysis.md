@@ -127,7 +127,7 @@ Create a Jupyter notebook in your project's `notebooks/` directory.
 
 Use `pandas` and any other Python libraries necessary to read the data, assess data quality, and perform the analysis addressing your story idea. For example, run descriptive stats on the data, groupby, etc. 
 
-Write narrative in the notebook using [Markdown cells](http://www.firstpythonnotebook.org/markdown/index.html) to explain each code step, why you’re performing it, and the findings.
+Write narrative in the notebook using [Markdown cells](https://www.edlitera.com/blog/posts/jupyter-markdown-tutorial) to explain each code step, why you’re performing it, and the findings.
 
 As mentioned in [notebook details](#notebook-details), you must include at least two data visualizations that explore some facet of the data (simply printing a table does *not* count as a visualization).
 
