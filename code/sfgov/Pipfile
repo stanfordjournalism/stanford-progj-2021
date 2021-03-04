@@ -12,6 +12,7 @@ tornado = "==5.1.1"
 geopandas = "*"
 altair = "*"
 vega = "*"
+jupyterlab = "*"
 
 [dev-packages]
 
