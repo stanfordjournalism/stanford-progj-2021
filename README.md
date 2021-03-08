@@ -137,6 +137,10 @@ No class.
 * Overview of requirements for [final project](projects/sf_data_analysis.md)
 * One-on-one technical consults 
 
+### Week 9
 
+#### Day 17 - SF PD Analysis with Eric Sagara
+
+* Guest lecture: [SF police data analysis](code/sfgov/sfpd-larceny-altair.ipynb) with guest lecturer Eric Sagara, of Big Local News
 
 
