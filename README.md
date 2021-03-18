@@ -144,3 +144,18 @@ No class.
 * Guest lecture: [SF police data analysis](code/sfgov/sfpd-larceny-altair.ipynb) with guest lecturer Eric Sagara, of Big Local News
 
 
+#### Day 18 - Final Project Data Workshop
+
+* One-on-one check-ins for the [final project](projects/sf_data_analysis.md)
+
+### Week 10
+
+##### Day 19 - Final Project Presentations
+
+* Students presentations for the [final project](projects/sf_data_analysis.md)
+
+##### Day 20 - Course retrospective
+
+* [Course Retrospective](https://docs.google.com/presentation/d/1Ofs8s2tEoD1HyGdqTATw_-EWjrLZJpDNjlO1fLmkNGo/edit?usp=sharing)
+* Provide feedback on how to improve the course
+
