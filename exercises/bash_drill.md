@@ -11,7 +11,10 @@ thought.
 Open a terminal.
 
 ```
-# The most fundamental question: Where am I?
+# Unix is profound
+whoami
+
+# Where am I?
 pwd
 
 # Do you have a Desktop?
